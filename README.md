@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d7ebd9ed-f630-4a8c-bfd7-e696bae0234f/deploy-status)](https://app.netlify.com/sites/yeet-it-junk-removal/deploys)
+
 Start new git repo:
 https://www.gatsbyjs.com/docs/tutorial/getting-started/part-1/#set-up-a-github-repo-for-your-site
 
@@ -50,4 +52,5 @@ https://www.gatsbyjs.com/docs/tutorial/getting-started/part-1/#set-up-a-github-r
 Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
 
 [<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal)
+
 # yeet-it-junk-removal
