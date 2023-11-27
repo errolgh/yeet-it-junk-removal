@@ -38,35 +38,17 @@ export default function Nav() {
               Home
             </Link>
           </li>
-          {/* <li className="hover:text-teal-400">
-            <Link to="/services" activeClassName="active">
-              Services
-            </Link>
+          <li className='flex place-content-end -mr-3'>
+            <a
+              href="tel:9084721977"
+              className="bg-black rounded-xl h-10 flex relative w-44 pt-1"
+            >
+              <div className='text-right'>
+                <FaPhone className="absolute text-yellow-600 top-3 left-3" />
+                <span className=" text-white ml-9 font-bold">(908)472-1977</span>
+              </div>
+            </a>
           </li>
-          <li className="hover:text-teal-400">
-            <Link to="/portfolio" activeClassName="active">
-              Portfolio
-            </Link>
-          </li>
-          <li className="hover:text-teal-400">
-            <Link to="/blog" activeClassName="active">
-              Blog
-            </Link>
-          </li>
-          <li className="hover:text-teal-400">
-            <Link to="/about" activeClassName="active">
-              About
-            </Link>
-          </li>
-          <li className="hover:text-teal-400">
-            <Link to="/contact" activeClassName="active">
-              Contact
-            </Link>
-          </li> */}
-        <a href="tel:9084721977" className="bg-black rounded-xl h-10 flex relative w-44 pt-1 ">
-          <FaPhone className="absolute text-yellow-600 top-3 left-3" />
-          <span className=" text-white ml-9">(908)472-1977</span>
-        </a>
         </ul>
 
         {/*  Hamburger Button  */}

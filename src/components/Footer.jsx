@@ -35,7 +35,7 @@ export default function Footer() {
             <div className="flex flex-col items-center space-y-3 md:items-start">
               <Link
                 to="/"
-                className="capitalize text-black mb-1 hover:text-teal-400"
+                className="capitalize text-black mb-1 hover:underline"
               >
                 Home
               </Link>
