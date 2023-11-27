@@ -4,7 +4,6 @@ import ParallaxHero from '../components/ParallaxHero'
 import CTABanner from '../components/CTABanner'
 import SplitTextImage from '../components/SplitTextImage'
 import ThreeFeatureIcons from '../components/ThreeFeatureIcons'
-import { Link } from 'gatsby'
 
 const IndexPage = () => {
   return (
@@ -67,14 +66,14 @@ const IndexPage = () => {
           </ul>
         </div>
       </section>
-      <section className="mt-20 mb-20 px-12 mx-auto">
+      <section id="estimate" className="mt-20 mb-20 px-12 mx-auto">
         <h2 className="text-2xl md:text-4xl font-sans font-bold mb-4 mt-16">
           Get a Free Estimate Today
         </h2>
         <div className="h-2 w-1/2 mb-4 bg-gradient-to-r from-junkGreen to-transparent" />
         <p className="mb-6">
           Whether you need one item removed or an entire house cleaned out, you
-          can do a few things to obtain a free quote.
+          can do a few things to obtain a free quote:
         </p>
         <ol>
           <li className="feature-list-item">
@@ -82,8 +81,20 @@ const IndexPage = () => {
             what you need removed.
           </li>
           <li className="feature-list-item">
-            You can snap a picture & send: TEXT – 908-472-1977 E-MAIL –
-            JunkYeetInfo@gmail.com
+            You can snap a picture & send: TEXT –{' '}
+            <a
+              href="sms:9084721977"
+              className="text-decoration-line: underline text-blue-700"
+            >
+              908-472-1977
+            </a>{' '}
+            E-MAIL –
+            <a
+              className="text-decoration-line: underline text-blue-700"
+              href="mailto:junkyeetinfo@gmail.com"
+            >
+              JunkYeetInfo@gmail.com
+            </a>
           </li>
           <li className="feature-list-item">
             We can come to your location, assess the item(s) at hand, and

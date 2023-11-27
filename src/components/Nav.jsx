@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Owl from '../images/svg/owl.js'
 import { Link } from 'gatsby'
+import { FaPhone } from 'react-icons/fa6'
 
 export default function Nav() {
   const [open, setOpen] = useState(false)
@@ -62,6 +63,10 @@ export default function Nav() {
               Contact
             </Link>
           </li> */}
+        <a href="tel:9084721977" className="bg-black rounded-xl h-10 flex relative w-44 pt-1 ">
+          <FaPhone className="absolute text-yellow-600 top-3 left-3" />
+          <span className=" text-white ml-9">(908)472-1977</span>
+        </a>
         </ul>
 
         {/*  Hamburger Button  */}

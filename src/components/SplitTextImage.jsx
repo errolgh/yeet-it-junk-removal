@@ -4,7 +4,7 @@ import skyline from '../images/skyline.jpg'
 export default function SplitTextImage(props, children) {
   return (
     <section className='mx-auto'>
-      <div className="flex flex-col md:flex-row px-8 space-y-8 space-x-10 md:justify-between md:space-y-0 mb-12">
+      <div className="mx-auto flex flex-col md:flex-row px-8 space-y-8 md:space-x-10 md:justify-between md:space-y-0 mb-12 md:pl-20">
         <div className="">
           <h2 className="text-2xl md:text-4xl font-sans">Who We Are</h2>
           <div className="h-2 w-1/2 mb-4 bg-gradient-to-r from-junkGreen to-transparent" />
@@ -24,7 +24,7 @@ export default function SplitTextImage(props, children) {
           </p>
         </div>
         {/* Image */}
-        <div className="mx-auto flex justify-center align-center">
+        <div className="mx-auto flex justify-center align-center w-full">
           <img src={skyline} alt="" className="shadow-2xl object-cover" />
         </div>
       </div>
