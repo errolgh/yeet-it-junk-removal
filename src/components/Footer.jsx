@@ -5,7 +5,6 @@ import Facebook from '../images/svg/icon-facebook.svg'
 import Twitter from '../images/svg/icon-twitter.svg'
 import Pinterest from '../images/svg/icon-pinterest.svg'
 import Instagram from '../images/svg/icon-instagram.svg'
-import { AnchorLink } from 'gatsby-plugin-anchor-links'
 import { Link } from 'gatsby'
 
 export default function Footer() {
