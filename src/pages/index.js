@@ -83,10 +83,10 @@ const IndexPage = () => {
           <li className="feature-list-item">
             You can snap a picture & send: TEXT –{' '}
             <a
-              href="sms:9084721977"
+              href="sms:4438390909"
               className="text-decoration-line: underline text-blue-700"
             >
-              908-472-1977
+              (443)839-0909
             </a>{' '}
             E-MAIL –
             <a

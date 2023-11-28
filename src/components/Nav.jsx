@@ -40,12 +40,12 @@ export default function Nav() {
           </li>
           <li className='flex place-content-end -mr-3'>
             <a
-              href="tel:9084721977"
+              href="tel:4438390909"
               className="bg-black rounded-xl h-10 flex relative w-44 pt-1"
             >
               <div className='text-right'>
                 <FaPhone className="absolute text-yellow-600 top-3 left-3" />
-                <span className=" text-white ml-9 font-bold">(908)472-1977</span>
+                <span className=" text-white ml-9 font-bold">(443)839-0909</span>
               </div>
             </a>
           </li>
