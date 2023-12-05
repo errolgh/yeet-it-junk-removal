@@ -1,5 +1,5 @@
 import * as React from 'react'
-import skyline from '../images/skyline.jpg'
+import skyline from '../images/skyline.png'
 
 export default function SplitTextImage(props, children) {
   return (

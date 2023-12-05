@@ -41,11 +41,11 @@ export default function Nav() {
           <li className='flex place-content-end -mr-3 bg-black rounded-xl h-10 pr-3'>
             <a
               href="tel:4438390909"
-              className="flex relative w-44 pt-1"
+              className="flex relative w-48 ml-10 pt-1"
             >
               <div className='text-right'>
                 <FaPhone className="absolute text-yellow-600 top-3 left-3" />
-                <span className=" text-white ml-9 font-bold">(443)839-0909</span>
+                <span className=" text-white ml-9 font-bold">(443)839&nbsp;-&nbsp;0909</span>
               </div>
             </a>
           </li>
