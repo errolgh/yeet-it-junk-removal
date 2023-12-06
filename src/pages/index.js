@@ -14,9 +14,9 @@ const IndexPage = () => {
       <SplitTextImage />
       <ThreeFeatureIcons />
       <div className="mb-12 md:mb-24" />
-      <section className="mt-20 mb-20 px-12 mx-auto">
+      <section className="mt-20 mb-20 px-12 mx-auto max-w-8xl">
         <h2 className="text-2xl md:text-4xl font-sans font-bold mb-4 mt-16">
-          What We Take
+          What We <span className='text-junkGreen text-4xl font-bold'>Yeet</span> (Take)
         </h2>
         <div className="h-2 w-1/2 mb-4 bg-gradient-to-r from-junkGreen to-transparent" />
         <p className="mb-6">
@@ -38,10 +38,10 @@ const IndexPage = () => {
           </ul>
 
           <ul>
-            <li className="feature-list-item">Hoarder Junk</li>
-            <li className="feature-list-item">Electronic</li>
+            <li className="feature-list-item">Excess Collections</li>
+            <li className="feature-list-item">Electronics</li>
             <li className="feature-list-item">Mattresses</li>
-            <li className="feature-list-item">Storage Units</li>
+            <li className="feature-list-item">Storage Units Cleanouts</li>
             <li className="feature-list-item">...And Much More!</li>
           </ul>
         </div>
@@ -66,9 +66,9 @@ const IndexPage = () => {
           </ul>
         </div>
       </section>
-      <section id="estimate" className="mt-20 mb-20 px-12 mx-auto">
+      <section id="estimate" className="mt-20 mb-20 px-12 mx-auto max-w-8xl">
         <h2 className="text-2xl md:text-4xl font-sans font-bold mb-4 mt-16">
-          Get a Free Estimate Today
+          Get a <span className='text-junkGreen text-4xl font-bold'>Free</span> Estimate Today
         </h2>
         <div className="h-2 w-1/2 mb-4 bg-gradient-to-r from-junkGreen to-transparent" />
         <p className="mb-6">
@@ -83,10 +83,10 @@ const IndexPage = () => {
           <li className="feature-list-item">
             You can snap a picture & send: TEXT –{' '}
             <a
-              href="sms:4438390909"
+              href="sms:+14438390909"
               className="text-decoration-line: underline text-blue-700"
             >
-              (443)839-0909
+              +1(443)839-0909
             </a>{' '}
             E-MAIL –
             <a

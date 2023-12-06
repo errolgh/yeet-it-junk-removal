@@ -19,6 +19,9 @@ module.exports = {
         darkEfferBlue: '#002c58',
         alabaster: '#F9FAFB',
       },
+      maxWidth: {
+        '8xl': '1440px',
+      },
       fontFamily: {
         ubuntu: ["Ubuntu, sans-serif"],
         poppins: ["Poppins, sans-serif"],

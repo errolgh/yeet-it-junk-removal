@@ -38,14 +38,15 @@ export default function Nav() {
               Home
             </Link>
           </li>
-          <li className='flex place-content-end -mr-3 bg-black rounded-xl h-10 pr-3'>
+          <li className="flex place-content-end ml-4 bg-black rounded-xl h-10 pr-3">
             <a
-              href="tel:4438390909"
-              className="flex relative w-48 ml-10 pt-1"
-            >
-              <div className='text-right'>
-                <FaPhone className="absolute text-yellow-600 top-3 left-3" />
-                <span className=" text-white ml-9 font-bold">(443)839&nbsp;-&nbsp;0909</span>
+              href="tel:+14438390909"
+              className="flex relative w-48 ml-10 pt-1 md:w-40 md:ml-10">
+              <div className="text-right whitespace-nowrap">
+                <FaPhone className="absolute text-yellow-600 top-3 left-3 md:-left-6" />
+                <span className="text-white ml-11 font-bold md:ml-0">
+                  +1(443)839-0909
+                </span>
               </div>
             </a>
           </li>

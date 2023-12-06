@@ -129,10 +129,10 @@ export default function Footer() {
          @TODO: Add hue-rotate elements that match theme colors: https://codepen.io/sosuke/pen/Pjoqqp */}
         <div className="flex flex-col items-center space-y-4 md:items-start pl-4">
           <div className="flex space-x-6">
-            <a href="/">
+            <a href="https://www.facebook.com/profile.php?id=61553945744042">
               <Facebook />
             </a>
-            <a href="/">
+            {/* <a href="/">
               <Twitter />
             </a>
             <a href="/">
@@ -140,7 +140,7 @@ export default function Footer() {
             </a>
             <a href="/">
               <Instagram />
-            </a>
+            </a> */}
           </div>
           <div className="text-center md:text-left text-black">
             <p>© {new Date().getFullYear()} YEET IT! Junk Removal</p>
