@@ -33,9 +33,19 @@ export default function Nav() {
         flex flex-col space-y-6 font-alata md:p-4 md:h-10 md:bg-transparent md:w-min
         md:visible md:flex-row md:space-x-8 md:space-y-0 md:static md:mb-6 md:pt-10 md:items-center`}
         >
-          <li className="hover:text-teal-400">
+          <li className="hover:text-white">
             <Link to="/" activeClassName="active">
               Home
+            </Link>
+          </li>
+          <li className="hover:text-white">
+            <Link to="/contact/" activeClassName="active">
+              Contact&nbsp;Us
+            </Link>
+          </li>
+          <li className="hover:text-white">
+            <Link to="/about/" activeClassName="active">
+              About
             </Link>
           </li>
           <li className="flex place-content-end ml-4 bg-black rounded-xl h-10 pr-3">
@@ -43,9 +53,9 @@ export default function Nav() {
               href="tel:+14438390909"
               className="flex relative w-48 ml-10 pt-1 md:w-40 md:ml-10">
               <div className="text-right whitespace-nowrap">
-                <FaPhone className="absolute text-yellow-600 top-3 left-3 md:-left-6" />
+                <FaPhone className="invisible md:visible absolute text-yellow-600 top-3 left-3 md:-left-6" />
                 <span className="text-white ml-11 font-bold md:ml-0">
-                  +1(443)839-0909
+                  +1(443) 839-0909
                 </span>
               </div>
             </a>

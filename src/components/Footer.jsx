@@ -29,9 +29,9 @@ export default function Footer() {
         {/*  Menus Container  */}
         <div className="flex flex-col space-y-12 md:space-x-48 md:flex-row md:space-y-0">
           {/*  Menu 1  */}
-          <div className="flex flex-col items-center w-full md:items-start group">
+          <div className="flex flex-col items-center w-full  group">
             <div className="mb-5 font-bold text-black capitalize">Menu</div>
-            <div className="flex flex-col items-center space-y-3 md:items-start">
+            <div className="flex flex-col items-center space-y-3 ">
               <Link
                 to="/"
                 className="capitalize text-black mb-1 hover:underline"
@@ -39,15 +39,23 @@ export default function Footer() {
                 Home
               </Link>
             </div>
-            {/* <div className="flex flex-col items-center space-y-3 md:items-start">
+             <div className="flex flex-col items-center space-y-3 ">
               <Link
-                to="/services"
-                className="capitalize text-black mb-1 hover:text-teal-400"
+                to="/contact"
+                className="capitalize text-black mb-1 hover:underline"
               >
-                Services
+                Contact&nbsp;Us
               </Link>
             </div>
-            <div className="flex flex-col items-center space-y-3 md:items-start">
+             <div className="flex flex-col items-center space-y-3 ">
+              <Link
+                to="/about"
+                className="capitalize text-black mb-1 hover:underline"
+              >
+                About
+              </Link>
+            </div>
+            {/* <div className="flex flex-col items-center space-y-3 md:items-start">
               <Link
                 to="/portfolio"
                 className="capitalize text-black mb-1 hover:text-teal-400"
