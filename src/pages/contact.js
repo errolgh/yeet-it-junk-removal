@@ -50,7 +50,7 @@ const ContactForm = () => {
             <div>
               <h1 id="contact"> Contact Us</h1>
               <p className="pt-4">
-                Filling out this form will notify our someone from our team. Let
+                Filling out this form will notify someone from our team. Let
                 us know what your needs are so we can provide what we do best!
               </p>
             </div>
@@ -163,6 +163,9 @@ const ContactForm = () => {
                     {errors.message?.message}
                   </span>
                 </div>
+
+                {/* photos for submission */}
+
                 {/* Submission Elements */}
                 <button
                   type="submit"

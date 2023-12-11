@@ -39,7 +39,7 @@ export default function Footer() {
                 Home
               </Link>
             </div>
-             <div className="flex flex-col items-center space-y-3 ">
+            {/* <div className="flex flex-col items-center space-y-3 ">
               <Link
                 to="/contact"
                 className="capitalize text-black mb-1 hover:underline"
@@ -47,14 +47,14 @@ export default function Footer() {
                 Contact&nbsp;Us
               </Link>
             </div>
-             <div className="flex flex-col items-center space-y-3 ">
+            <div className="flex flex-col items-center space-y-3 ">
               <Link
                 to="/about"
                 className="capitalize text-black mb-1 hover:underline"
               >
                 About
               </Link>
-            </div>
+            </div> */}
             {/* <div className="flex flex-col items-center space-y-3 md:items-start">
               <Link
                 to="/portfolio"

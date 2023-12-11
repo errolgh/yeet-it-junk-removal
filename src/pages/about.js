@@ -55,10 +55,6 @@ const AboutPage = () => {
         <Link to="/contact">
           <Button className="text-white" order="primary">Contact Us Today</Button>
         </Link>
-        {/* <h2>What people have to say</h2>
-        <p>Client Testimonials and Success Stories</p>
-        <p>Link portfolio</p>
-        <h2>Community Involvement and Values</h2> */}
       </section>
     </Layout>
   )

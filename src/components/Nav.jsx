@@ -38,7 +38,7 @@ export default function Nav() {
               Home
             </Link>
           </li>
-          <li className="hover:text-white">
+          {/* <li className="hover:text-white">
             <Link to="/contact/" activeClassName="active">
               Contact&nbsp;Us
             </Link>
@@ -47,7 +47,7 @@ export default function Nav() {
             <Link to="/about/" activeClassName="active">
               About
             </Link>
-          </li>
+          </li> */}
           <li className="flex place-content-end ml-4 bg-black rounded-xl h-10 pr-3">
             <a
               href="tel:+14438390909"
