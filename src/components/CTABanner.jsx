@@ -12,10 +12,10 @@ export default function CTABanner() {
       <div id="cta" className="bg-black py-12 w-full">
         <div className="flex flex-col p-2 space-y-6 font-sans text-center">
           <h2 className="mx-auto space-y-10 text-2xl md:text-4xl font-sans font-bold text-slate-100">
-            Clear Out Your Space Today!
+            Tidy Up Your Space Today!
           </h2>
           <p className="text-slate-200">
-            Schedule Hassle-Free Junk Removal and Transform Your Home. Get
+            Schedule Hassle-Free Cleaning or Junk Removal and Transform Your Dwelling. Get
             Started Now!
           </p>
           <m.div

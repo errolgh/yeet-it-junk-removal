@@ -25,10 +25,10 @@ export default function ParallaxHero() {
           className="px-4 absolute text-slate-200 inset-0 flex flex-col justify-center items-center"
         >
           <h1 className="font-bold font-sans text-3xl md:text-5xl mb-4 text-slate-200">
-            Affordable Junk Removal in the Baltimore Area
+            Affordable Cleaning & Junk Removal in the Baltimore Area
           </h1>
           <p className="text-xl md:text-3xl max-w-xl text-slate-200">
-            Your Trusted Partner in Stress-Free Junk Removal.
+            Your Trusted Partner in Stress-Free Space Cleaning.
           </p>
         </m.div>
       </div>

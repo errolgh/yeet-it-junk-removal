@@ -17,10 +17,10 @@ export default function Nav() {
             </div>
             <div className="flex flex-col text-center justify-center z-10 text-slate-200">
               <span className="text-xl tracking-widest text-black font-bold">
-                YEET IT!
+                Nevermore
               </span>
               <span className="text-xs tracking-widest uppercase text-black font-bold">
-                Junk&nbsp;Removal
+                Cleaning & Junk Removal
               </span>
             </div>
           </div>

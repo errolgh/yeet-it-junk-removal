@@ -16,7 +16,7 @@ const IndexPage = () => {
       <div className="mb-12 md:mb-24" />
       <section className="mt-20 mb-20 px-12 mx-auto max-w-8xl">
         <h2 className="text-2xl md:text-4xl font-sans font-bold mb-4 mt-16">
-          What We <span className='text-junkGreen text-4xl font-bold'>Yeet</span> (Take)
+          What We <span className='text-junkGreen text-4xl font-bold'>Do</span>
         </h2>
         <div className="h-2 w-1/2 mb-4 bg-gradient-to-r from-junkGreen to-transparent" />
         <p className="mb-6">
@@ -108,4 +108,4 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = () => <title>YEET IT! Junk Removal</title>
+export const Head = () => <title>Nevermore Cleaning & Junk Removal</title>

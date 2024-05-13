@@ -19,10 +19,10 @@ export default function Footer() {
           </div>
           <div className="flex flex-col text-center justify-center z-10 text-black font-bold">
             <span className="font-bold text-xl tracking-widest text-black">
-              YEET IT!
+              Nevermore
             </span>
             <span className="text-xs tracking-widest uppercase text-black font-bold">
-              Junk&nbsp;Removal
+              Cleaning & Junk Removal
             </span>
           </div>
         </div>
@@ -151,7 +151,7 @@ export default function Footer() {
             </a>
           </div>
           <div className="text-center md:text-left text-black">
-            <p>© {new Date().getFullYear()} YEET IT! Junk Removal</p>
+            <p>© {new Date().getFullYear()} Nevermore Cleaning & Junk Removal</p>
           </div>
         </div>
       </div>

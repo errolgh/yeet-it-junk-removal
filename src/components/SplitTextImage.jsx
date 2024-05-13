@@ -9,16 +9,16 @@ export default function SplitTextImage(props, children) {
           <h2 className="text-2xl md:text-4xl font-sans">Who We Are</h2>
           <div className="h-2 w-1/2 mb-4 bg-gradient-to-r from-junkGreen to-transparent" />
           <p className="font-sans max-w-xl">
-            Discover the difference with YEET IT!, where professionalism meets
-            friendliness in every junk removal job. We are based in Baltimore, MD and we
+            Discover the difference with Nevermore Cleaning & Junk Removal services, where professionalism meets
+            friendliness in every job. We are based in Baltimore, MD and we
             take pride in our expert team's commitment to providing top-notch
             service with a personal touch to our community. Our mission is simple – making
-            clutter, furniture, and debris disappear without the hassle. Because we are committed to responsible disposal, our team transports items to the appropriate disposal facilities such as recycling centers, donantion centers and waste facilities. Experience the convenience of our transparent and affordable
+            clutter, furniture, and debris disappear without the hassle. Because we are committed to responsible cleaning and disposal, our team transports items to the appropriate disposal facilities such as recycling centers, donantion centers and waste facilities. Experience the convenience of our transparent and affordable
             pricing, ensuring satisfaction at every step.
           </p>
           <br />
           <p className="font-sans max-w-xl">
-            Choose YEET IT! for professional, friendly, and budget-friendly junk
+            Choose Nevermore for professional, friendly, and budget-friendly cleaning & junk
             removal that puts your space first.
           </p>
         </div>
