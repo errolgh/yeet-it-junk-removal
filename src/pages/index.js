@@ -30,7 +30,7 @@ const IndexPage = () => {
         <br />
         <div className="flex flex-col md:flex-row md:justify-around">
           <ul>
-            <li className="feature-list-item">Construction Debris</li>
+            {/* <li className="feature-list-item">Construction Debris</li> */}
             <li className="feature-list-item">Appliances</li>
             <li className="feature-list-item">Furniture</li>
             <li className="feature-list-item">Yard Waste</li>
@@ -83,17 +83,17 @@ const IndexPage = () => {
           <li className="feature-list-item">
             You can snap a picture & send: TEXT –{' '}
             <a
-              href="sms:+14438390909"
+              href="sms:+19084721977"
               className="text-decoration-line: underline text-blue-700"
             >
-              +1(443)839-0909
+              +1(908)472-1977
             </a>{' '}
             E-MAIL –
             <a
               className="text-decoration-line: underline text-blue-700"
-              href="mailto:junkyeetinfo@gmail.com"
+              href="mailto:LetsTalkNevermore@gmail.com"
             >
-              JunkYeetInfo@gmail.com
+              LetsTalkNevermore@gmail.com
             </a>
           </li>
           <li className="feature-list-item">

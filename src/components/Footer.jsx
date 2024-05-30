@@ -146,12 +146,12 @@ export default function Footer() {
             <a href="/">
               <Pinterest />
             </a> */}
-            <a href="https://www.instagram.com/yeet_itjunkremoval">
+            {/* <a href="https://www.instagram.com/yeet_itjunkremoval">
               <Instagram />
-            </a>
+            </a> */}
           </div>
           <div className="text-center md:text-left text-black">
-            <p>© {new Date().getFullYear()} Nevermore Cleaning & Junk Removal</p>
+            <p>© {new Date().getFullYear()} Nevermore Cleaning & Junk Removal LLC</p>
           </div>
         </div>
       </div>

@@ -61,10 +61,10 @@ const ContactForm = () => {
                   <span className="text-gray-600">(443) 839-0909</span>
               </div>
                 </a>
-                <a href="mailto:JunkYeetInfo@gmail.com">
+                <a href="mailto:LetsTalkNevermore@gmail.com">
               <div className="inline-flex space-x-2 items-center">
                   <IoMailSharp className="text-yellow-600 text-xl" />
-                  <span className="text-gray-600">JunkYeetInfo@gmail.com</span>
+                  <span className="text-gray-600">LetsTalkNevermore@gmail.com</span>
               </div>
                 </a>
               <div className="inline-flex space-x-2 items-center">
