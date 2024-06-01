@@ -58,7 +58,7 @@ const ContactForm = () => {
                 <a href="sms:+14438390909">
               <div className="inline-flex space-x-2 items-center">
                   <IoCall className="text-yellow-600 text-xl" />
-                  <span className="text-gray-600">(443) 839-0909</span>
+                  <span className="text-gray-600">(908) 472-1977</span>
               </div>
                 </a>
                 <a href="mailto:LetsTalkNevermore@gmail.com">

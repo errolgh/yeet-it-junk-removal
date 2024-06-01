@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Owl from '../images/svg/owl.js'
+import Logo from '../images/logo.png'
 import { Link } from 'gatsby'
 import { FaPhone } from 'react-icons/fa6'
 
@@ -12,8 +12,8 @@ export default function Nav() {
         <Link to="/">
           <div className="flex">
             {/*  Logo  */}
-            <div className="flex w-20 p-4 pt-6 relative z-50">
-              <Owl theme="light" />
+            <div className="flex w-20 p-1 relative z-50">
+              <img src={Logo} alt="Nevermore Cleaning & Junk Removal logo"/>
             </div>
             <div className="flex flex-col text-center justify-center z-10 text-slate-200">
               <span className="text-xl tracking-widest text-black font-bold">
@@ -55,7 +55,7 @@ export default function Nav() {
               <div className="text-right whitespace-nowrap">
                 <FaPhone className="invisible md:visible absolute text-yellow-600 top-3 left-3 md:-left-6" />
                 <span className="text-white ml-11 font-bold md:ml-0">
-                  +1(443) 839-0909
+                  +1(908) 472-1977
                 </span>
               </div>
             </a>

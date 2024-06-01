@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 // import Owl from '../images/svg/owl.js'
-import Owl from '../images/svg/owl.js'
-import Facebook from '../images/svg/icon-facebook.svg'
-import Twitter from '../images/svg/icon-twitter.svg'
-import Pinterest from '../images/svg/icon-pinterest.svg'
-import Instagram from '../images/svg/icon-instagram.svg'
-import { Link } from 'gatsby'
+import Logo from '../images/logo.png';
+import Facebook from '../images/svg/icon-facebook.svg';
+import Twitter from '../images/svg/icon-twitter.svg';
+import Pinterest from '../images/svg/icon-pinterest.svg';
+import Instagram from '../images/svg/icon-instagram.svg';
+import { Link } from 'gatsby';
 
 export default function Footer() {
   return (
@@ -15,7 +15,7 @@ export default function Footer() {
         {/*  Logo  */}
         <div className="flex flex-col items-center space-y-2 md:flex-row md:space-x-4 md:pr-8">
           <div className="flex w-20 justify-center pt-4 relative z-50">
-            <Owl theme="light" />
+            <img src={Logo} alt="Nevermore Cleaning & Junk Removal logo" />
           </div>
           <div className="flex flex-col text-center justify-center z-10 text-black font-bold">
             <span className="font-bold text-xl tracking-widest text-black">
@@ -36,7 +36,7 @@ export default function Footer() {
                 to="/"
                 className="capitalize text-black mb-1 hover:underline"
               >
-                Home
+                Back to Top
               </Link>
             </div>
             {/* <div className="flex flex-col items-center space-y-3 ">
@@ -137,9 +137,9 @@ export default function Footer() {
          @TODO: Add hue-rotate elements that match theme colors: https://codepen.io/sosuke/pen/Pjoqqp */}
         <div className="flex flex-col items-center space-y-4 md:items-start pl-4">
           <div className="flex space-x-6">
-            <a href="https://www.facebook.com/profile.php?id=61553945744042">
+            {/* <a href="https://www.facebook.com/profile.php?id=61553945744042">
               <Facebook />
-            </a>
+            </a> */}
             {/* <a href="/">
               <Twitter />
             </a>
@@ -151,10 +151,12 @@ export default function Footer() {
             </a> */}
           </div>
           <div className="text-center md:text-left text-black">
-            <p>© {new Date().getFullYear()} Nevermore Cleaning & Junk Removal LLC</p>
+            <p>
+              © {new Date().getFullYear()} Nevermore Cleaning & Junk Removal LLC
+            </p>
           </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }
