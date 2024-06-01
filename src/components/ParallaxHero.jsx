@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import { motion as m, useTransform, useScroll } from 'framer-motion'
-import chairs from '../images/hero-truck.png'
+import mainBanner from '../images/hero.jpg'
 
 export default function ParallaxHero() {
   const ref = useRef(null)
@@ -16,8 +16,8 @@ export default function ParallaxHero() {
       <div ref={ref} className="text-center relative w-full overflow-hidden">
         <m.img
           style={{ y: backgroundY }}
-          src={chairs}
-          alt="Wimberley Office"
+          src={mainBanner}
+          alt="Cleaning equipment"
           className="object-cover tint -z-10 w-full"
         />
         <m.div
@@ -25,10 +25,10 @@ export default function ParallaxHero() {
           className="px-4 absolute text-slate-200 inset-0 flex flex-col justify-center items-center"
         >
           <h1 className="font-bold font-sans text-3xl md:text-5xl mb-4 text-slate-200">
-            Affordable Cleaning & Junk Removal in the Baltimore Area
+            Affordable Cleaning & Junk Removal in Baltimore
           </h1>
           <p className="text-xl md:text-3xl max-w-xl text-slate-200">
-            Your Trusted Partner in Stress-Free Space Cleaning.
+            Your Trusted Partner in Stress-Free Space Cleaning
           </p>
         </m.div>
       </div>
