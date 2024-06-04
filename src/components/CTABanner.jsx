@@ -1,7 +1,7 @@
-import React from 'react'
-import Button from './Button'
-import { motion as m } from 'framer-motion'
-import { AnchorLink } from 'gatsby-plugin-anchor-links'
+import React from 'react';
+import Button from './Button';
+import { motion as m } from 'framer-motion';
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
 
 // @TODO: Add teal to isBreakOrContinueStatement
 // idk what the todo above means anymore
@@ -15,8 +15,8 @@ export default function CTABanner() {
             Tidy Up Your Space Today!
           </h2>
           <p className="text-slate-200">
-            Schedule Hassle-Free Cleaning or Junk Removal and Transform Your Dwelling. Get
-            Started Now!
+            Schedule Hassle-Free Junk Removal and Exterior Cleaning to Transform
+            Your Dwelling. Get Started Now!
           </p>
           <m.div
             animate={['initial']}
@@ -71,5 +71,5 @@ export default function CTABanner() {
         </div>
       </div>
     </section>
-  )
+  );
 }
