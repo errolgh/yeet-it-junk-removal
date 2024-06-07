@@ -8,7 +8,7 @@ import ThreeFeatureIcons from '../components/ThreeFeatureIcons';
 const IndexPage = () => {
   return (
     <Layout>
-      {/* <ParallaxHero />
+      <ParallaxHero />
       <CTABanner />
       <div className="mb-12 md:mb-24" />
       <SplitTextImage />
@@ -22,14 +22,14 @@ const IndexPage = () => {
         <p className="mb-6">
           Instead of navigating around heaps of junk on your property, hire us
           to remove it. We can remove all kinds of junk from your property and
-          dispose of it at the proper facilities. We can also remove debris
-          that’s been piling up in your yard or at your construction site. We’ll
+          dispose of it at the proper facilities. We’ll
           handle the cleanup so you can spend time hanging out with friends and
           family.
         </p>
         <br />
         <div className="flex flex-col md:flex-row md:justify-around">
           <ul>
+            {/* <li className="feature-list-item">Construction Debris</li> */}
             <li className="feature-list-item">Appliances</li>
             <li className="feature-list-item">Furniture</li>
             <li className="feature-list-item">Yard Waste</li>
@@ -71,6 +71,10 @@ const IndexPage = () => {
           Estimate Today
         </h2>
         <div className="h-2 w-1/2 mb-4 bg-gradient-to-r from-junkGreen to-transparent" />
+        {/* <p className="mb-6">
+          Whether you need one item removed or an exterior house cleaning, you
+          can do a few things to obtain a free quote:
+        </p> */}
         <p className="mb-6">
           We can provide a quote over the phone with a detailed description of
           what you need removed.
@@ -92,8 +96,12 @@ const IndexPage = () => {
               LetsTalkNevermore@gmail.com
             </a>
           </li>
+          {/* <li className="feature-list-item">
+            We can come to your location, assess the item(s) at hand, and
+            provide you with a quote on site.
+          </li> */}
         </ol>
-      </section> */}
+      </section>
     </Layout>
   );
 };

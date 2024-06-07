@@ -16,7 +16,7 @@ export default function CTABanner() {
           </h2>
           <p className="text-slate-200">
             Schedule Hassle-Free Junk Removal and Exterior Cleaning to Transform
-            Your Dwelling. Get Started Now!
+            Your Space. Get Started Now!
           </p>
           <m.div
             animate={['initial']}
