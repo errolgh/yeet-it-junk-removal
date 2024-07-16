@@ -169,7 +169,7 @@ const ContactForm = () => {
                 {/* Submission Elements */}
                 <button
                   type="submit"
-                  className="inline-block w-full md:w-auto self-end bg-junkGreen font-bold text-white rounded-lg px-6 py-2 uppercase"
+                  className="inline-block w-full md:w-auto self-end bg-brandPrimary font-bold text-white rounded-lg px-6 py-2 uppercase"
                 >
                   Send
                 </button>
