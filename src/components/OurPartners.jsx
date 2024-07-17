@@ -20,12 +20,12 @@ export default function OurPartners() {
               alt="Nevermore Property Maintenance"
             />
           </div> */}
-          <a href="https://www.cantoncleaningco.com/">
+          <a target="_blank" href="https://www.cantoncleaningco.com/">
             <div className="max-w-[250px] mb-20 md:mb-0">
               <img src={CantonCleaningLogo} alt="Canton Cleaning" />
             </div>
           </a>
-          <a href="https://www.baymgmtgroup.com/">
+          <a target="_blank" href="https://www.baymgmtgroup.com/">
             <div className="max-w-[250px]">
               <img src={BMGLogo} alt="Bay Property Mangement Group" />
             </div>

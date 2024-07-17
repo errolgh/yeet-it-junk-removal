@@ -11,7 +11,7 @@ const AboutPage = () => {
         <p className="mb-6">
           Welcome to Nevermore Cleaning & Junk Removal, where passion for
           cleanliness meets dedication to community. Founded in April 2024 by
-          Errol Watson and Mel Burman, we are proud to be a black and queer
+          Errol Watson and Mel Burman, we are proud to be a Black and Queer
           owned business based in the heart of Baltimore, Maryland.
         </p>
 
@@ -34,7 +34,7 @@ const AboutPage = () => {
           beauty and cleanliness of our beloved city. At Nevermore Cleaning &
           Junk Removal, we believe that a clean environment fosters pride and
           improves quality of life. Our goal is not only to provide superior
-          cleaning and junk removal services but also to contribute to a
+          cleaning and junk removal services, but also to contribute to a
           cleaner, more vibrant Baltimore.
         </p>
 

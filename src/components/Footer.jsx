@@ -146,18 +146,18 @@ export default function Footer() {
          @TODO: Add hue-rotate elements that match theme colors: https://codepen.io/sosuke/pen/Pjoqqp */}
         <div className="flex flex-col items-center space-y-4 md:items-start pl-4">
           <div className="flex space-x-6">
-            {/* <a href="https://www.facebook.com/profile.php?id=61553945744042">
+            <a target="_blank" href="https://www.facebook.com/people/Nevermore-Cleaning-Junk-Removal/61560563170433/">
               <Facebook />
-            </a> */}
+            </a>
             {/* <a href="/">
               <Twitter />
             </a>
             <a href="/">
               <Pinterest />
             </a> */}
-            {/* <a href="https://www.instagram.com/yeet_itjunkremoval">
+            <a target="_blank" href="https://www.instagram.com/letstalknevermore">
               <Instagram />
-            </a> */}
+            </a>
           </div>
           <div className="text-center md:text-left text-black">
             <p>
