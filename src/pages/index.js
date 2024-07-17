@@ -21,7 +21,7 @@ const IndexPage = () => {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl md:text-4xl font-sans font-bold mb-4 mt-16">
             What We{' '}
-            <span className="text-junkGreen text-4xl font-bold">Do</span>
+            <span className="text-junkGreen text-2xl md:text-4xl font-bold">Do</span>
           </h2>
           <div className="h-2 w-1/2 mb-4 bg-gradient-to-r from-junkGreen to-transparent" />
           <p className="mb-6">
@@ -75,7 +75,7 @@ const IndexPage = () => {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl md:text-4xl font-sans font-bold mb-4 mt-16">
             Get a{' '}
-            <span className="text-junkGreen text-4xl font-bold">Free</span>{' '}
+            <span className="text-junkGreen text-2xl md:text-4xl font-bold">Free</span>{' '}
             Estimate Today
           </h2>
           <div className="h-2 w-1/2 mb-4 bg-gradient-to-r from-junkGreen to-transparent" />

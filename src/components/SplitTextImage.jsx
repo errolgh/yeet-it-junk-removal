@@ -6,9 +6,12 @@ export default function SplitTextImage(props, children) {
     <section className="mx-auto max-w-8xl">
       <div className="mx-auto flex flex-col md:flex-row px-8 space-y-8 md:space-x-16 md:justify-around md:space-y-0 mb-12 md:pl-20">
         <div className="">
-          <h2 className="text-2xl md:text-4xl font-sans">Who We Are</h2>
+        <h2 className="text-2xl md:text-4xl font-sans font-bold mb-4 mt-16">
+            Who We{' '}
+            <span className="text-junkGreen text-2xl md:text-4xl font-bold">Are</span>
+          </h2>
           <div className="h-2 w-1/2 mb-4 bg-gradient-to-r from-junkGreen to-transparent" />
-          <p className="font-sans max-w-xl">
+          <p className="max-w-xl">
             Discover the difference with Nevermore services, where
             professionalism meets friendliness in every job. We are based in
             Baltimore, MD and we take pride in our expert team's commitment to
