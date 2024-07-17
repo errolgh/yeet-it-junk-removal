@@ -31,30 +31,39 @@ export default function Footer() {
           {/*  Menu 1  */}
           <div className="flex flex-col items-center w-full  group">
             <div className="mb-5 font-bold text-black capitalize">Menu</div>
+
             <div className="flex flex-col items-center space-y-3 ">
               <Link
                 to="/"
                 className="capitalize text-black mb-1 hover:underline"
               >
-                Back to Top
+                Home
               </Link>
             </div>
-            {/* <div className="flex flex-col items-center space-y-3 ">
+            <div className="flex flex-col items-center space-y-3 ">
               <Link
-                to="/contact"
+                to="/services#services"
+                className="capitalize text-black mb-1 hover:underline"
+              >
+                Services
+              </Link>
+            </div>
+            <div className="flex flex-col items-center space-y-3 ">
+              <Link
+                to="/about#about"
+                className="capitalize text-black mb-1 hover:underline"
+              >
+                About
+              </Link>
+            </div>
+            <div className="flex flex-col items-center space-y-3 ">
+              <Link
+                to="/contact#contact"
                 className="capitalize text-black mb-1 hover:underline"
               >
                 Contact&nbsp;Us
               </Link>
             </div>
-            <div className="flex flex-col items-center space-y-3 ">
-              <Link
-                to="/about"
-                className="capitalize text-black mb-1 hover:underline"
-              >
-                About
-              </Link>
-            </div> */}
             {/* <div className="flex flex-col items-center space-y-3 md:items-start">
               <Link
                 to="/portfolio"

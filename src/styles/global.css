@@ -31,9 +31,9 @@ body {
 
 /* |||||||||||||||||||||| Hero Tint |||||||||||||||||||||| */
 .tint {
-    background-position: bottom;
-    filter: brightness(37%) opacity(100%);
-  }
+  background-position: bottom;
+  filter: brightness(37%) opacity(100%);
+}
 
 /* |||||||||||||||||||||| Typography Styles |||||||||||||||||||||| */
 
@@ -54,24 +54,27 @@ h2 {
   @apply text-2xl font-bold;
 }
 
-main p, span {
+main p,
+span {
   @apply text-gray-600 leading-8 font-normal text-lg;
 }
 
 .feature-list-item {
   margin-bottom: 12px;
+
+  /* <li> styling: */
+  @apply text-gray-600 leading-8 font-medium;
+
+  /* styled bullet styling: */
   &:before {
-    content: "+";
+    content: '+';
     @apply text-junkGreen mr-2 font-extrabold text-lg;
   }
-  @apply font-medium text-gray-800;
 }
 
 aside {
   @apply text-sm;
 }
-
-
 
 /* |||||||||||||||||||||| Hamburger Menu |||||||||||||||||||||| */
 

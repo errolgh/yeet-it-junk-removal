@@ -15,12 +15,16 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@headlessui/react": "^2.1.1",
+    "@heroicons/react": "^2.1.4",
     "@hookform/resolvers": "^3.3.2",
+    "antd": "^5.18.3",
     "autoprefixer": "^10.4.16",
     "framer-motion": "^10.16.5",
     "gatsby": "^5.12.4",
     "gatsby-plugin-anchor-links": "^1.2.1",
     "gatsby-plugin-image": "^3.12.3",
+    "gatsby-plugin-manifest": "^5.13.1",
     "gatsby-plugin-postcss": "^6.12.0",
     "gatsby-plugin-react-svg": "^3.3.0",
     "gatsby-plugin-sharp": "^5.12.3",

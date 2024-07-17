@@ -44,7 +44,7 @@ const ContactForm = () => {
   }
   return (
     <Layout>
-      <section className="flex mb-20 md:mt-6 min-h-full md:mb-24 justify-center items-center">
+      <section id="contact" className="flex mb-20 md:mt-6 min-h-full md:mb-24 justify-center items-center">
         <div className="flex flex-col space-y-6 w-full max-w-5xl p-8 md:flex-row md:space-x-6 md:space-y-0">
           <div className="relative flex flex-col justify-between space-y-8 md:p-12 lg:p-6">
             <div>
@@ -169,7 +169,7 @@ const ContactForm = () => {
                 {/* Submission Elements */}
                 <button
                   type="submit"
-                  className="inline-block w-full md:w-auto self-end bg-junkGreen font-bold text-white rounded-lg px-6 py-2 uppercase"
+                  className="inline-block w-full md:w-auto self-end bg-brandPrimary font-bold text-white rounded-lg px-6 py-2 uppercase"
                 >
                   Send
                 </button>
