@@ -1,9 +1,10 @@
 import React from 'react';
-import mainBanner from '../images/brownstone_buildings.jpg';
+import storefront from '../images/storefront.jpg';
 import mopping from '../images/mopping.jpg';
+import skyscraper from '../images/skyscraper.jpg';
 import { Carousel } from 'antd';
 
-const images = [mainBanner, mopping];
+const images = [skyscraper, mopping, storefront];
 
 export default function CarouselHero() {
   return (

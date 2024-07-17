@@ -38,17 +38,22 @@ export default function Nav() {
               Home
             </Link>
           </li>
-          {/* <li className="hover:text-white">
-            <Link to="/contact/" activeClassName="active">
-              Contact&nbsp;Us
+          <li className="hover:text-white">
+            <Link to="/services/" activeClassName="active">
+              Services
             </Link>
           </li>
           <li className="hover:text-white">
             <Link to="/about/" activeClassName="active">
               About
             </Link>
-          </li> */}
-          <li className="flex place-content-end ml-4 bg-black rounded-xl h-10 pr-3">
+          </li>
+          <li className="hover:text-white">
+            <Link to="/contact/" activeClassName="active">
+              Contact&nbsp;Us
+            </Link>
+          </li>
+          {/* <li className="flex place-content-end ml-4 bg-black rounded-xl h-10 pr-3">
             <a
               href="tel:+14438390909"
               className="flex relative w-48 ml-10 pt-1 md:w-40 md:ml-10">
@@ -59,7 +64,7 @@ export default function Nav() {
                 </span>
               </div>
             </a>
-          </li>
+          </li> */}
         </ul>
 
         {/*  Hamburger Button  */}

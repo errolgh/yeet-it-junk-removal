@@ -1,17 +1,18 @@
 import React from 'react';
-import brownStone from '../images/brownstone_buildings.jpg';
+import storefront from '../images/storefront.jpg';
 import mopping from '../images/mopping.jpg';
+import skyscraper from '../images/skyscraper.jpg';
 import { Carousel } from 'antd';
 
-const images = [brownStone, mopping];
+const images = [mopping, skyscraper, storefront];
 
 const carouselNode = (
   <Carousel
     autoplay
     dots
     draggable
-    autoplaySpeed={4000}
-    speed={1500}
+    autoplaySpeed={4200}
+    speed={1200}
     easing="easeInOutBack"
     className="relative"
   >
@@ -30,13 +31,13 @@ const carouselNode = (
 export default function TailwindUIHero() {
   return (
     <div className="bg-white">
-        {carouselNode}
+      {carouselNode}
       <div className="relative isolate px-6 lg:px-8">
         <div className="absolute max-w-2xl py-28 bottom-64 md:bottom-20 m-auto left-0 right-0 lg:py-40 justify-center flex flex-col align-middle">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-200 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
               Black and Queer owned Business in Baltimore.{' '}
-              <a href="#" className="font-semibold text-indigo-600">
+              <a href="/about" className="font-semibold text-indigo-600">
                 <span className="absolute inset-0" aria-hidden="true" />
                 Read more <span aria-hidden="true">&rarr;</span>
               </a>

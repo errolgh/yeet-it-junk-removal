@@ -6,7 +6,7 @@ import Button from '../components/Button.jsx';
 const AboutPage = () => {
   return (
     <Layout>
-      <section className="mt-20 mb-20 px-6 mx-auto max-w-lg md:max-w-xl lg:max-w-4xl">
+      <section id="about" className="mt-20 mb-20 px-6 mx-auto max-w-lg md:max-w-xl lg:max-w-4xl">
         <h1 className="mb-14">About Us</h1>
         <p className="mb-6">
           Welcome to Nevermore Cleaning & Junk Removal, where passion for

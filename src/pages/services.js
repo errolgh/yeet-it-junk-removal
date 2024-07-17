@@ -6,7 +6,7 @@ import Button from '../components/Button.jsx';
 const ServicesPage = () => {
   return (
     <Layout>
-      <section className="mt-20 mb-20 px-6 mx-auto max-w-lg md:max-w-xl lg:max-w-4xl">
+      <section id="services" className="mt-20 mb-20 px-6 mx-auto max-w-lg md:max-w-xl lg:max-w-4xl">
         <h1 className="">Nevermore Cleaning & Junk Removal —</h1>
         <small className="block mt-4 font-bold text-lg text-slate-600 mb-14">
           Your All-In-One Cleaning Junk Removal Partner in Baltimore, MD

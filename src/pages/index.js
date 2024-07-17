@@ -17,7 +17,7 @@ const IndexPage = () => {
       <SplitTextImage />
       <ThreeFeatureIcons />
       <div className="mb-12 md:mb-24" />
-      <section className="mt-20 mb-20 px-12 mx-auto max-w-8xl">
+      <section id="home" className="mt-20 mb-20 px-12 mx-auto max-w-8xl">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl md:text-4xl font-sans font-bold mb-4 mt-16">
             What We{' '}
