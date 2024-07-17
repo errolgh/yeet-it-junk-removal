@@ -76,7 +76,7 @@ const AboutPage = () => {
 
         <div className="flex justify-center md:justify-normal">
           <Link to="/contact">
-            <Button className="text-white" order="primary">
+            <Button order="primary">
               Contact Us Today
             </Button>
           </Link>
