@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useRef } from 'react';
 import { IoLogoFacebook } from 'react-icons/io5';
 // import { IoLogoTwitter } from 'react-icons/io5'
 // import { IoLogoLinkedin } from 'react-icons/io5'
@@ -13,6 +13,8 @@ import * as yup from 'yup';
 import CanBg from '../images/svg/canBg.svg';
 import Layout from '../components/Layout';
 import Button from '../components/Button'
+import emailjs from '@emailjs/browser';
+
 
 // @TODO: once netlify is connected, check gatsby/netlify docs for anything else
 
@@ -31,6 +33,29 @@ const schema = yup.object().shape({
 });
 
 const ContactForm = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(`${process.env.SERVICE_ID}`, `${process.env.TEMPLATE_ID}`, form.current, {
+        publicKey: `${process.env.PUBLIC_KEY}`,
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      )
+      e.target.reset()
+  };
+
+
+
+
   const {
     register,
     handleSubmit,
@@ -103,18 +128,19 @@ const ContactForm = () => {
             <div className="relative bg-white shadow-lg rounded-xl p-8 text-gray-600 h-full">
               {/* <CanBg className="absolute scale-150 -z-10 rotate-12 -left-20 top-48" /> */}
               <form
+              ref={form}
                 className="flex flex-col space-y-2 text-sm md:w-80"
-                onSubmit={handleSubmit(onSubmit)}
-                onSubmitt="submit"
-                name="contact v1"
-                method="POST"
-                netlify
+                onSubmit={sendEmail}
+                // onSubmitt="submit"
+                // name="contact v1"
+                // method="POST"
+                // netlify... we're using emailJS right now
               >
                 {/* name input */}
                 <div>
                   <input
                     type="text"
-                    name="name"
+                    name="from_name"
                     placeholder="Your Name"
                     className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-1 focus:ring-efferBlue"
                     {...register('name')}
@@ -127,7 +153,7 @@ const ContactForm = () => {
                 <div>
                   <input
                     type="text"
-                    name="business"
+                    name="from_business"
                     placeholder="Your Business (Optional)"
                     className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-1 focus:ring-efferBlue"
                     {...register('business')}
@@ -140,7 +166,7 @@ const ContactForm = () => {
                 <div>
                   <input
                     type="email"
-                    name="email"
+                    name="from_email"
                     placeholder="Email Address"
                     className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-1 focus:ring-efferBlue"
                     {...register('email')}
@@ -153,7 +179,7 @@ const ContactForm = () => {
                 <div>
                   <input
                     type="text"
-                    name="phone"
+                    name="from_phone"
                     placeholder="Phone Number"
                     className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-1 focus:ring-efferBlue"
                     {...register('phone')}
@@ -191,7 +217,7 @@ const ContactForm = () => {
                   type="hidden"
                   value="contact v1"
                   className="hidden"
-                  name="contact"
+                  name="from_contact"
                 />
               </form>
             </div>
