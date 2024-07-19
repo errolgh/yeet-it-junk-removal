@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { IoLogoFacebook } from 'react-icons/io5';
 // import { IoLogoTwitter } from 'react-icons/io5'
 // import { IoLogoLinkedin } from 'react-icons/io5'
@@ -10,7 +10,6 @@ import { Link } from 'gatsby';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
-// import CanBg from '../images/svg/canBg.svg';
 import Layout from '../components/Layout';
 import Button from '../components/Button';
 import emailjs from '@emailjs/browser';
@@ -33,6 +32,7 @@ const schema = yup.object().shape({
 
 const ContactForm = () => {
   const form = useRef();
+  const [buttonText, setButtonText] = useState('Send');
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -51,6 +51,7 @@ const ContactForm = () => {
         () => {
           console.log('form.current:', form.current);
           console.log('SUCCESS!');
+          setButtonText('Sent!');
         },
         (error) => {
           console.log('FAILED...', error.text);
@@ -129,7 +130,6 @@ const ContactForm = () => {
           </div>
           <div>
             <div className="relative bg-white shadow-lg rounded-xl p-8 text-gray-600 h-full">
-              {/* <CanBg className="absolute scale-150 -z-10 rotate-12 -left-20 top-48" /> */}
               <form
                 ref={form}
                 className="flex flex-col space-y-2 text-sm md:w-80"
@@ -205,15 +205,13 @@ const ContactForm = () => {
                   </span>
                 </div>
 
-                {/* photos for submission */}
-
                 {/* Submission Elements */}
                 <Button
                   order="primary"
                   type="submit"
                   className="inline-block w-full md:w-auto self-end bg-brandPrimary font-bold text-white rounded-lg px-6 py-2 uppercase"
                 >
-                  Send
+                  {buttonText}
                 </Button>
                 {/* as per netlify forms: */}
                 <input
