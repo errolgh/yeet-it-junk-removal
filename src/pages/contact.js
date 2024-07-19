@@ -10,11 +10,10 @@ import { Link } from 'gatsby';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
-import CanBg from '../images/svg/canBg.svg';
+// import CanBg from '../images/svg/canBg.svg';
 import Layout from '../components/Layout';
-import Button from '../components/Button'
+import Button from '../components/Button';
 import emailjs from '@emailjs/browser';
-
 
 // @TODO: once netlify is connected, check gatsby/netlify docs for anything else
 
@@ -37,37 +36,41 @@ const ContactForm = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    console.log('form.current: ', form.current);
 
     emailjs
-      .sendForm(`${process.env.SERVICE_ID}`, `${process.env.TEMPLATE_ID}`, form.current, {
-        publicKey: `${process.env.PUBLIC_KEY}`,
-      })
+      .sendForm(
+        `${process.env.SERVICE_ID}`,
+        `${process.env.TEMPLATE_ID}`,
+        form.current,
+        {
+          publicKey: `${process.env.PUBLIC_KEY}`,
+        }
+      )
       .then(
         () => {
+          console.log('form.current:', form.current);
           console.log('SUCCESS!');
         },
         (error) => {
           console.log('FAILED...', error.text);
-        },
-      )
-      e.target.reset()
+        }
+      );
+    e.target.reset();
   };
-
-
-
 
   const {
     register,
-    handleSubmit,
+    // handleSubmit,
     formState: { errors },
   } = useForm({
     resolver: yupResolver(schema),
   });
 
   // handleSubmit & netlify-forms both provide a "data" object
-  const onSubmit = (data) => {
-    console.log('first', data);
-  };
+  // const onSubmit = (data) => {
+  //   console.log('first', data);
+  // };
   return (
     <Layout>
       <section
@@ -128,7 +131,7 @@ const ContactForm = () => {
             <div className="relative bg-white shadow-lg rounded-xl p-8 text-gray-600 h-full">
               {/* <CanBg className="absolute scale-150 -z-10 rotate-12 -left-20 top-48" /> */}
               <form
-              ref={form}
+                ref={form}
                 className="flex flex-col space-y-2 text-sm md:w-80"
                 onSubmit={sendEmail}
                 // onSubmitt="submit"
@@ -140,7 +143,7 @@ const ContactForm = () => {
                 <div>
                   <input
                     type="text"
-                    name="from_name"
+                    name="name"
                     placeholder="Your Name"
                     className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-1 focus:ring-efferBlue"
                     {...register('name')}
@@ -153,7 +156,7 @@ const ContactForm = () => {
                 <div>
                   <input
                     type="text"
-                    name="from_business"
+                    name="business"
                     placeholder="Your Business (Optional)"
                     className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-1 focus:ring-efferBlue"
                     {...register('business')}
@@ -166,7 +169,7 @@ const ContactForm = () => {
                 <div>
                   <input
                     type="email"
-                    name="from_email"
+                    name="email"
                     placeholder="Email Address"
                     className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-1 focus:ring-efferBlue"
                     {...register('email')}
@@ -179,7 +182,7 @@ const ContactForm = () => {
                 <div>
                   <input
                     type="text"
-                    name="from_phone"
+                    name="phone"
                     placeholder="Phone Number"
                     className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-1 focus:ring-efferBlue"
                     {...register('phone')}
@@ -192,7 +195,7 @@ const ContactForm = () => {
                 <div>
                   <textarea
                     rows="4"
-                    name="from_message"
+                    name="message"
                     placeholder="Type your message here."
                     className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-1 focus:ring-efferBlue"
                     {...register('message')}
@@ -214,8 +217,8 @@ const ContactForm = () => {
                 </Button>
                 {/* as per netlify forms: */}
                 <input
-                  type="hidden"
-                  value="contact v1"
+                  type="submit"
+                  value="Send"
                   className="hidden"
                   name="from_contact"
                 />
