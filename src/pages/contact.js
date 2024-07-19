@@ -237,3 +237,19 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
+
+export const Head = () => (
+  <>
+    <title>Nevermore Cleaning & Junk Removal</title>
+    <meta charSet="utf-8" />
+    <meta
+      name="description"
+      content="Nevermore Cleaning & Junk Removal offers top-notch services in junk removal, exterior cleaning, and comprehensive interior cleaning. Partnered with the Canton Cleaning Company, we ensure your property is spotless and clutter-free."
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#000000" />
+  </>
+);

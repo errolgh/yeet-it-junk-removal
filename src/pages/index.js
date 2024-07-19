@@ -8,6 +8,14 @@ import TailwindUIHero from '../components/TailwindUIHero';
 import OurPartners from '../components/OurPartners';
 import { Link } from 'gatsby';
 
+// export const Head = () => (
+//   <>
+//     <meta charSet="utf-8" />
+//     <title>Nevermore Cleaning & Junk Removal - Home</title>
+//     <meta name content />
+//   </>
+// );
+
 const IndexPage = () => {
   return (
     <Layout>
@@ -33,11 +41,11 @@ const IndexPage = () => {
             are spotless and clutter-free.
           </p>
           <p className="mb-6">
-            Partnered with the Canton Cleaning Company, we offer a seamless blend of
-            services that guarantee your property is "good to go" inside and
-            out. From meticulous interior cleaning to expert junk removal and
-            exterior cleaning, our collaboration ensures every detail is
-            covered.
+            Partnered with the Canton Cleaning Company, we offer a seamless
+            blend of services that guarantee your property is "good to go"
+            inside and out. From meticulous interior cleaning to expert junk
+            removal and exterior cleaning, our collaboration ensures every
+            detail is covered.
           </p>
           <br />
           <div className="flex flex-col md:flex-row md:justify-around">
@@ -93,10 +101,10 @@ const IndexPage = () => {
             Explore more about our range of services on{' '}
             <Link className="font-semibold underline text-black" to="/services">
               Our Services
-            </Link>
-            {' '}page. Discover how Nevermore’s services can elevate your
-            business or property with our professional, friendly, and
-            cost-effective approach.
+            </Link>{' '}
+            page. Discover how Nevermore’s services can elevate your business or
+            property with our professional, friendly, and cost-effective
+            approach.
           </p>
         </div>
       </section>
@@ -151,4 +159,22 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head = () => <title>Nevermore Cleaning & Junk Removal</title>;
+export const Head = () => (
+  <>
+    <title>Nevermore Cleaning & Junk Removal</title>
+    <meta charSet="utf-8" />
+    <meta
+      name="description"
+      content="Nevermore Cleaning & Junk Removal offers top-notch services in junk removal, exterior cleaning, and comprehensive interior cleaning. Partnered with the Canton Cleaning Company, we ensure your property is spotless and clutter-free."
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta
+      name="theme-color"
+      content="#000000"
+      media="(prefers-color-scheme: dark)"
+    />
+  </>
+);

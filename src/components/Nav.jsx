@@ -8,7 +8,7 @@ export default function Nav() {
 
   return (
     <header className="relative flex justify-center">
-      <nav className="bg-yellow-600 text-slate-400 md:text-black w-full flex items-center justify-between font-bold md:px-5 lg:justify-center lg:gap-x-80 xl:gap-x-96">
+      <nav className="bg-brandPrimary text-slate-400 md:text-black w-full flex items-center justify-between font-bold md:px-5 lg:justify-center lg:gap-x-80 xl:gap-x-96">
         <Link to="/">
           <div className="flex">
             {/*  Logo  */}
@@ -58,7 +58,7 @@ export default function Nav() {
               href="tel:+14438390909"
               className="flex relative w-48 ml-10 pt-1 md:w-40 md:ml-10">
               <div className="text-right whitespace-nowrap">
-                <FaPhone className="invisible md:visible absolute text-yellow-600 top-3 left-3 md:-left-6" />
+                <FaPhone className="invisible md:visible absolute text-brandPrimary top-3 left-3 md:-left-6" />
                 <span className="text-white ml-11 font-bold md:ml-0">
                   +1(908) 472-1977
                 </span>

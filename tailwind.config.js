@@ -14,7 +14,7 @@ module.exports = {
     // },
     extend: {
       colors: {
-        brandPrimary: '#FFA630',
+        brandPrimary: '#ca8a04',
         efferBlue: '#00315A',
         junkGreen: "#4CAF50",
         darkEfferBlue: '#002c58',
