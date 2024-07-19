@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Layout from '../components/Layout';
-import CarouselHero from '../../spectralComponents/CarouselHero';
+// import CarouselHero from '../CarouselHero';
 import CTABanner from '../components/CTABanner';
 import SplitTextImage from '../components/SplitTextImage';
 import ThreeFeatureIcons from '../components/ThreeFeatureIcons';

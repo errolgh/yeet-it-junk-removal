@@ -115,9 +115,10 @@ const ContactForm = () => {
             <div className="flex text-lg space-x-4 text-junkGreen">
               <Link
                 target="_blank"
+                rel="noreferrer"
                 to="https://www.facebook.com/people/Nevermore-Cleaning-Junk-Removal/61560563170433/"
               >
-                <IoLogoFacebook className='text-xl md:text-3xl'/>
+                <IoLogoFacebook className="text-xl md:text-3xl" />
               </Link>
               {/* <Link to="/">
               <IoLogoTwitter />
@@ -127,9 +128,10 @@ const ContactForm = () => {
             </Link> */}
               <Link
                 target="_blank"
+                rel="noreferrer"
                 to="https://www.instagram.com/letstalknevermore"
               >
-                <IoLogoInstagram className='text-xl md:text-3xl'/>
+                <IoLogoInstagram className="text-xl md:text-3xl" />
               </Link>
             </div>
           </div>

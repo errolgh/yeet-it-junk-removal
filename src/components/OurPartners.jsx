@@ -1,7 +1,7 @@
 import React from 'react';
 import CantonCleaningLogo from '../images/canton-cleaning-logo.png';
 // import NevermoreLogoOrange from '../images/nevermorelogo-orange.png';
-import BMGLogo from '../images/bmg-logo.webp'
+import BMGLogo from '../images/bmg-logo.webp';
 
 export default function OurPartners() {
   return (
@@ -20,12 +20,20 @@ export default function OurPartners() {
               alt="Nevermore Property Maintenance"
             />
           </div> */}
-          <a target="_blank" href="https://www.cantoncleaningco.com/">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.cantoncleaningco.com/"
+          >
             <div className="max-w-[200px] mb-20 md:mb-0">
               <img src={CantonCleaningLogo} alt="Canton Cleaning" />
             </div>
           </a>
-          <a target="_blank" href="https://www.baymgmtgroup.com/">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.baymgmtgroup.com/"
+          >
             <div className="max-w-[250px]">
               <img src={BMGLogo} alt="Bay Property Mangement Group" />
             </div>
