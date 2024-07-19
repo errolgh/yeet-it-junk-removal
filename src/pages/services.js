@@ -9,7 +9,7 @@ const ourServices = [
     id: 0,
     renderLabel: () => (
       <h3 className="font-bold text-xl md:text-2xl mt-6 mb-3 font-sans">
-        Exterior Cleaning & Junk Removal
+        Exterior Cleaning
       </h3>
     ),
     renderContent: () => (
@@ -24,10 +24,6 @@ const ourServices = [
         <li className="feature-list-item">
           <strong>Dumpster Areas:</strong> Removal of trash to maintain a tidy
           environment.
-        </li>
-        <li className="feature-list-item">
-          <strong>Bulk Trash & Junk Removal:</strong> Efficient disposal of
-          large items and debris.
         </li>
       </ul>
     ),
@@ -48,6 +44,26 @@ const ourServices = [
         <li className="feature-list-item">
           <strong>Commercial:</strong> Comprehensive cleaning for offices and
           facilities to create a professional atmosphere.
+        </li>
+      </ul>
+    ),
+  },
+  {
+    id: 2,
+    renderLabel: () => (
+      <h3 className="font-bold text-xl md:text-2xl mt-6 mb-3 font-sans">
+        Junk Removal
+      </h3>
+    ),
+    renderContent: () => (
+      <ul className="mb-6">
+        <li className="feature-list-item">
+          <strong>Junk Removal:</strong> Efficient disposal of large items and
+          debris.
+        </li>
+        <li className="feature-list-item">
+          <strong>Bulk Trash:</strong> Easy removal of prepared waste bags made
+          accessible from designated areas.
         </li>
       </ul>
     ),
@@ -153,7 +169,7 @@ const ServicesPage = () => {
           customer satisfaction.
         </p>
         <div className="flex justify-center md:justify-normal">
-          <Link to="/contact">
+          <Link to="/contact/#contact">
             <Button className="text-white" order="primary">
               Contact Us Today
             </Button>

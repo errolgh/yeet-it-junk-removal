@@ -9,7 +9,7 @@ import { AnchorLink } from 'gatsby-plugin-anchor-links';
 export default function CTABanner() {
   return (
     <section id="cta">
-      <div id="cta" className="bg-black py-12 w-full">
+      <div id="cta" className="bg-black py-12 md:py-24 w-full mb-12 md:mb-24">
         <div className="flex flex-col p-2 space-y-6 font-sans text-center">
           <h2 className="mx-auto space-y-10 text-2xl md:text-4xl font-sans font-bold text-slate-100">
             Tidy Up Your Space Today!
@@ -62,9 +62,9 @@ export default function CTABanner() {
             </svg>
           </m.div>
           <div className="mx-auto">
-            <AnchorLink to="#estimate">
+            <AnchorLink to="/contact#contact">
               <Button className="text-white" order="primary">
-                BOOK NOW
+                Contact Us
               </Button>
             </AnchorLink>
           </div>

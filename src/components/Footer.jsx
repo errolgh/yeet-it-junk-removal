@@ -2,8 +2,8 @@ import React from 'react';
 // import Owl from '../images/svg/owl.js'
 import Logo from '../images/logo.png';
 import Facebook from '../images/svg/icon-facebook.svg';
-import Twitter from '../images/svg/icon-twitter.svg';
-import Pinterest from '../images/svg/icon-pinterest.svg';
+// import Twitter from '../images/svg/icon-twitter.svg';
+// import Pinterest from '../images/svg/icon-pinterest.svg';
 import Instagram from '../images/svg/icon-instagram.svg';
 import { Link } from 'gatsby';
 
@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <footer className="py-16 bg-yellow-600">
       {/* Footer Container  */}
-      <div className="container flex flex-col items-center justify-between mx-auto space-y-16 md:flex-row md:space-y-0 md:items-start">
+      <div className=" max-w-7xl flex flex-col items-center justify-between mx-auto space-y-16 md:flex-row md:space-y-0 md:items-start">
         {/*  Logo  */}
         <div className="flex flex-col items-center space-y-2 md:flex-row md:space-x-4 md:pr-8">
           <div className="flex w-20 justify-center pt-4 relative z-50">
@@ -35,7 +35,7 @@ export default function Footer() {
             <div className="flex flex-col items-center space-y-3 ">
               <Link
                 to="/"
-                className="capitalize text-black mb-1 hover:underline"
+                className="capitalize text-black mb-1 hover:underline hover:font-bold"
               >
                 Home
               </Link>
@@ -43,7 +43,7 @@ export default function Footer() {
             <div className="flex flex-col items-center space-y-3 ">
               <Link
                 to="/services#services"
-                className="capitalize text-black mb-1 hover:underline"
+                className="capitalize text-black mb-1 hover:underline hover:font-bold"
               >
                 Services
               </Link>
@@ -51,7 +51,7 @@ export default function Footer() {
             <div className="flex flex-col items-center space-y-3 ">
               <Link
                 to="/about#about"
-                className="capitalize text-black mb-1 hover:underline"
+                className="capitalize text-black mb-1 hover:underline hover:font-bold"
               >
                 About
               </Link>
@@ -59,7 +59,7 @@ export default function Footer() {
             <div className="flex flex-col items-center space-y-3 ">
               <Link
                 to="/contact#contact"
-                className="capitalize text-black mb-1 hover:underline"
+                className="capitalize text-black mb-1 hover:underline hover:font-bold"
               >
                 Contact&nbsp;Us
               </Link>

@@ -1,34 +1,43 @@
 import * as React from 'react';
 import Layout from '../components/Layout';
-import CarouselHero from '../components/CarouselHero';
+import CarouselHero from '../../spectralComponents/CarouselHero';
 import CTABanner from '../components/CTABanner';
 import SplitTextImage from '../components/SplitTextImage';
 import ThreeFeatureIcons from '../components/ThreeFeatureIcons';
 import TailwindUIHero from '../components/TailwindUIHero';
 import OurPartners from '../components/OurPartners';
+import { Link } from 'gatsby';
 
 const IndexPage = () => {
   return (
     <Layout>
       <TailwindUIHero />
-      {/* <CarouselHero /> */}
-      <CTABanner />
       <div className="mb-12 md:mb-24" />
       <SplitTextImage />
       <ThreeFeatureIcons />
       <div className="mb-12 md:mb-24" />
-      <section id="home" className="mt-20 mb-20 px-12 mx-auto max-w-8xl">
+      <section id="what-we-do" className="mt-20 mb-20 px-12 mx-auto max-w-7xl">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl md:text-4xl font-sans font-bold mb-4 mt-16">
             What We{' '}
-            <span className="text-junkGreen text-2xl md:text-4xl font-bold">Do</span>
+            <span className="text-junkGreen text-2xl md:text-4xl font-bold">
+              Do
+            </span>
           </h2>
           <div className="h-2 w-1/2 mb-4 bg-gradient-to-r from-junkGreen to-transparent" />
           <p className="mb-6">
-            Instead of navigating around heaps of junk on your property, hire us
-            to remove it. We can remove all kinds of junk from your property and
-            dispose of it at the proper facilities. We’ll handle the cleanup so
-            you can spend time hanging out with friends and family.
+            At Nevermore, we excel in three core areas: junk removal, exterior
+            cleaning, and comprehensive interior cleaning. Whether you're
+            preparing properties for turnovers, maintaining commercial spaces,
+            or seeking top-notch home cleaning solutions, we ensure your spaces
+            are spotless and clutter-free.
+          </p>
+          <p className="mb-6">
+            Partnered with the Canton Cleaning Company, we offer a seamless blend of
+            services that guarantee your property is "good to go" inside and
+            out. From meticulous interior cleaning to expert junk removal and
+            exterior cleaning, our collaboration ensures every detail is
+            covered.
           </p>
           <br />
           <div className="flex flex-col md:flex-row md:justify-around">
@@ -36,12 +45,10 @@ const IndexPage = () => {
               {/* <li className="feature-list-item">Construction Debris</li> */}
               <li className="feature-list-item">Appliances</li>
               <li className="feature-list-item">Furniture</li>
-              <li className="feature-list-item">Yard Waste</li>
-              <li className="feature-list-item">Christmas Trees</li>
+              <li className="feature-list-item">Excess Collections</li>
             </ul>
 
             <ul>
-              <li className="feature-list-item">Excess Collections</li>
               <li className="feature-list-item">Electronics</li>
               <li className="feature-list-item">Mattresses</li>
               <li className="feature-list-item">Storage Units Cleanouts</li>
@@ -70,12 +77,37 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
-
-      <section id="estimate" className="mt-20 mb-20 px-12 mx-auto max-w-8xl">
+      <section
+        id="discover-more"
+        className="mt-20 mb-20 px-12 mx-auto max-w-7xl"
+      >
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-2xl md:text-4xl font-sans font-bold mb-4 mt-16">
+            Discover{' '}
+            <span className="text-junkGreen text-2xl md:text-4xl font-bold">
+              More
+            </span>
+          </h2>
+          <div className="h-2 w-1/2 mb-4 bg-gradient-to-r from-junkGreen to-transparent" />
+          <p className="mb-6">
+            Explore more about our range of services on{' '}
+            <Link className="font-semibold underline text-black" to="/services">
+              Our Services
+            </Link>
+            {' '}page. Discover how Nevermore’s services can elevate your
+            business or property with our professional, friendly, and
+            cost-effective approach.
+          </p>
+        </div>
+      </section>
+      <CTABanner />
+      <section id="estimate" className="mt-20 mb-20 px-12 mx-auto max-w-7xl">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl md:text-4xl font-sans font-bold mb-4 mt-16">
             Get a{' '}
-            <span className="text-junkGreen text-2xl md:text-4xl font-bold">Free</span>{' '}
+            <span className="text-junkGreen text-2xl md:text-4xl font-bold">
+              Free
+            </span>{' '}
             Estimate Today
           </h2>
           <div className="h-2 w-1/2 mb-4 bg-gradient-to-r from-junkGreen to-transparent" />
@@ -92,13 +124,13 @@ const IndexPage = () => {
               You can snap pictures and send via text at{' '}
               <a
                 href="sms:+19084721977"
-                className="text-decoration-line: underline text-blue-700"
+                className="font-bold underline text-black"
               >
                 +1(908)472-1977
               </a>{' '}
               or email us at{' '}
               <a
-                className="text-decoration-line: underline text-blue-700"
+                className="font-bold underline text-black"
                 href="mailto:LetsTalkNevermore@gmail.com"
               >
                 LetsTalkNevermore@gmail.com
@@ -111,6 +143,7 @@ const IndexPage = () => {
           </ol>
         </div>
       </section>
+
       <OurPartners />
     </Layout>
   );

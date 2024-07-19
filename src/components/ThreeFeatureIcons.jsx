@@ -43,7 +43,7 @@ export default function ThreeFeatureIcons() {
             We are Local
           </h3>
           <p className="mx-auto max-w-md lg:max-w-xs">
-            Our company is locally owned and operated.
+            Locally owned and operating from our Hampden neighborhood HQ.
           </p>
         </div>
       </div>

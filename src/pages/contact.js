@@ -83,6 +83,11 @@ const ContactForm = () => {
             <div>
               <h1 id="contact"> Contact Us</h1>
               <p className="pt-4">
+                Ready to experience Nevermore? Schedule your hassle-free
+                services today. Let us partner with you to create cleaner, more
+                inviting environments for your business or home.
+              </p>
+              <p className="pt-4">
                 Filling out this form will notify someone from our team. Let us
                 know what your needs are so we can provide what we do best!
               </p>
@@ -90,20 +95,20 @@ const ContactForm = () => {
             <div className="flex flex-col space-y-6">
               <a href="sms:+19084721977">
                 <div className="inline-flex space-x-2 items-center">
-                  <IoCall className="text-junkGreen text-xl" />
+                  <IoCall className="text-junkGreen text-xl md:text-3xl" />
                   <span className="text-gray-600">(908) 472-1977</span>
                 </div>
               </a>
               <a href="mailto:LetsTalkNevermore@gmail.com">
                 <div className="inline-flex space-x-2 items-center">
-                  <IoMailSharp className="text-junkGreen text-xl" />
+                  <IoMailSharp className="text-junkGreen text-xl md:text-3xl" />
                   <span className="text-gray-600">
                     LetsTalkNevermore@gmail.com
                   </span>
                 </div>
               </a>
               <div className="inline-flex space-x-2 items-center">
-                <IoLocationSharp className="text-junkGreen text-xl" />
+                <IoLocationSharp className="text-junkGreen text-xl md:text-3xl" />
                 <span className="text-gray-600">Baltimore, MD</span>
               </div>
             </div>
@@ -112,7 +117,7 @@ const ContactForm = () => {
                 target="_blank"
                 to="https://www.facebook.com/people/Nevermore-Cleaning-Junk-Removal/61560563170433/"
               >
-                <IoLogoFacebook />
+                <IoLogoFacebook className='text-xl md:text-3xl'/>
               </Link>
               {/* <Link to="/">
               <IoLogoTwitter />
@@ -124,7 +129,7 @@ const ContactForm = () => {
                 target="_blank"
                 to="https://www.instagram.com/letstalknevermore"
               >
-                <IoLogoInstagram />
+                <IoLogoInstagram className='text-xl md:text-3xl'/>
               </Link>
             </div>
           </div>
