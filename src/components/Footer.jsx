@@ -9,7 +9,7 @@ import { Link } from 'gatsby';
 
 export default function Footer() {
   return (
-    <footer className="py-16 bg-yellow-600">
+    <footer className="py-16 bg-brandPrimary">
       {/* Footer Container  */}
       <div className=" max-w-7xl flex flex-col items-center justify-between mx-auto space-y-16 md:flex-row md:space-y-0 md:items-start">
         {/*  Logo  */}

@@ -6,7 +6,10 @@ import Button from '../components/Button.jsx';
 const AboutPage = () => {
   return (
     <Layout>
-      <section id="about" className="mt-20 mb-20 px-6 mx-auto max-w-lg md:max-w-xl lg:max-w-4xl">
+      <section
+        id="about"
+        className="mt-20 mb-20 px-6 mx-auto max-w-lg md:max-w-xl lg:max-w-4xl"
+      >
         <h1 className="mb-14">About Us</h1>
         <p className="mb-6">
           Welcome to Nevermore Cleaning & Junk Removal, where passion for
@@ -76,9 +79,7 @@ const AboutPage = () => {
 
         <div className="flex justify-center md:justify-normal">
           <Link to="/contact/#contact">
-            <Button order="primary">
-              Contact Us Today
-            </Button>
+            <Button order="primary">Contact Us Today</Button>
           </Link>
         </div>
 
@@ -229,3 +230,19 @@ const AboutPage = () => {
 };
 
 export default AboutPage;
+
+export const Head = () => (
+  <>
+    <title>Nevermore Cleaning & Junk Removal</title>
+    <meta charSet="utf-8" />
+    <meta
+      name="description"
+      content="Nevermore Cleaning & Junk Removal offers top-notch services in junk removal, exterior cleaning, and comprehensive interior cleaning. Partnered with the Canton Cleaning Company, we ensure your property is spotless and clutter-free."
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#000000" />
+  </>
+);
