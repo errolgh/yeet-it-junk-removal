@@ -1,10 +1,9 @@
-import React, { useState } from 'react'
-import Logo from '../images/logo.png'
-import { Link } from 'gatsby'
-// import { FaPhone } from 'react-icons/fa6'
+import React, { useState } from 'react';
+import Logo from '../images/logo.png';
+import { Link } from 'gatsby';
 
 export default function Nav() {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
   return (
     <header className="relative flex justify-center">
@@ -13,7 +12,7 @@ export default function Nav() {
           <div className="flex">
             {/*  Logo  */}
             <div className="flex w-20 p-1 relative z-50">
-              <img src={Logo} alt="Nevermore Cleaning & Junk Removal logo"/>
+              <img src={Logo} alt="Nevermore Cleaning & Junk Removal logo" />
             </div>
             <div className="flex flex-col text-center justify-center z-10 text-slate-200">
               <span className="text-xl tracking-widest text-black font-bold">
@@ -53,18 +52,6 @@ export default function Nav() {
               Contact&nbsp;Us
             </Link>
           </li>
-          {/* <li className="flex place-content-end ml-4 bg-black rounded-xl h-10 pr-3">
-            <a
-              href="tel:+14438390909"
-              className="flex relative w-48 ml-10 pt-1 md:w-40 md:ml-10">
-              <div className="text-right whitespace-nowrap">
-                <FaPhone className="invisible md:visible absolute text-brandPrimary top-3 left-3 md:-left-6" />
-                <span className="text-white ml-11 font-bold md:ml-0">
-                  +1(908) 472-1977
-                </span>
-              </div>
-            </a>
-          </li> */}
         </ul>
 
         {/*  Hamburger Button  */}
@@ -84,5 +71,5 @@ export default function Nav() {
         </div>
       </nav>
     </header>
-  )
+  );
 }

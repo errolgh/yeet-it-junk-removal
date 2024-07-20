@@ -36,7 +36,6 @@ const ContactForm = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log('form.current: ', form.current);
 
     emailjs
       .sendForm(
