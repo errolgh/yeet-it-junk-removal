@@ -1,13 +1,11 @@
-import React from 'react'
-import Nav from './Nav'
-import Footer from './Footer'
-import { motion as m } from 'framer-motion'
+import React from 'react';
+import Nav from './Nav';
+import Footer from './Footer';
+import { motion as m } from 'framer-motion';
 
 export default function Layout({ children }) {
   return (
     <div id="overflow-fix">
-      {/* don't remember the reason we used id instead of just using tailwind overflow-x-hidden... */}
-      {/* ... but the actual overflow occured on iPhone14*/}
       <Nav />
       <m.main
         initial={{
@@ -30,5 +28,5 @@ export default function Layout({ children }) {
       </m.main>
       <Footer />
     </div>
-  )
+  );
 }
