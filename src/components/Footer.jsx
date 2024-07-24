@@ -1,11 +1,10 @@
 import React from 'react';
-// import Owl from '../images/svg/owl.js'
 import Logo from '../images/logo.png';
-import Facebook from '../images/svg/icon-facebook.svg';
-// import Twitter from '../images/svg/icon-twitter.svg';
-// import Pinterest from '../images/svg/icon-pinterest.svg';
-import Instagram from '../images/svg/icon-instagram.svg';
+import { IoLogoFacebook, IoLogoInstagram } from 'react-icons/io5';
 import { Link } from 'gatsby';
+
+// const zoomLevel = 14;
+// const mapSource = `https://maps.google.com/maps?q=55%20Manchester%20Avenue,%20May%20Pen,%20Jamaica&t=&z=${zoomLevel}&ie=UTF8&iwloc=&output=embed`;
 
 export default function Footer() {
   return (
@@ -64,38 +63,6 @@ export default function Footer() {
                 Contact&nbsp;Us
               </Link>
             </div>
-            {/* <div className="flex flex-col items-center space-y-3 md:items-start">
-              <Link
-                to="/portfolio"
-                className="capitalize text-black mb-1 hover:text-teal-400"
-              >
-                Portfolio
-              </Link>
-            </div>
-            <div className="flex flex-col items-center space-y-3 md:items-start">
-              <Link
-                to="/blog"
-                className="capitalize text-black mb-1 hover:text-teal-400"
-              >
-                Blog
-              </Link>
-            </div>
-            <div className="flex flex-col items-center space-y-3 md:items-start">
-              <Link
-                to="/about"
-                className="capitalize text-black mb-1 hover:text-teal-400"
-              >
-                About
-              </Link>
-            </div>
-            <div className="flex flex-col items-center space-y-3 md:items-start">
-              <Link
-                to="/contact"
-                className="capitalize text-black mb-1 hover:text-teal-400"
-              >
-                Contact
-              </Link>
-            </div> */}
           </div>
           {/*  Menu 2  */}
           {/* <div className="flex flex-col items-center w-full md:items-start">
@@ -142,8 +109,7 @@ export default function Footer() {
             </div>
           </div> */}
         </div>
-        {/*  Social Container 
-         @TODO: Add hue-rotate elements that match theme colors: https://codepen.io/sosuke/pen/Pjoqqp */}
+        {/*  Social Container  */}
         <div className="flex flex-col items-center space-y-4 md:items-start pl-4">
           <div className="flex space-x-6">
             <a
@@ -151,26 +117,27 @@ export default function Footer() {
               rel="noreferrer"
               href="https://www.facebook.com/people/Nevermore-Cleaning-Junk-Removal/61560563170433/"
             >
-              <Facebook />
+              <IoLogoFacebook className="text-4xl" />
             </a>
-            {/* <a href="/">
-              <Twitter />
-            </a>
-            <a href="/">
-              <Pinterest />
-            </a> */}
             <a
               target="_blank"
               rel="noreferrer"
               href="https://www.instagram.com/letstalknevermore"
             >
-              <Instagram />
+              <IoLogoInstagram className="text-4xl" />
             </a>
           </div>
           <div className="text-center md:text-left text-black">
             <p>
               © {new Date().getFullYear()} Nevermore Cleaning & Junk Removal LLC
             </p>
+            {/* <iframe
+              src={mapSource}
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+            /> */}
           </div>
         </div>
       </div>

@@ -162,6 +162,7 @@ export default IndexPage;
 export const Head = () => (
   <>
     <title>Nevermore Cleaning & Junk Removal</title>
+    <link rel="icon" href="/src/images/nevermorelogo-orange.png"></link>
     <meta charSet="utf-8" />
     <meta
       name="description"
