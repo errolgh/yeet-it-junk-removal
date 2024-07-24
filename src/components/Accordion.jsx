@@ -48,7 +48,7 @@ export default function Accordion({ items, keepOthersOpen }) {
               className="toggle"
               onClick={() => handleAccordionToggle(listItem)}
             >
-              <p>{listItem.renderLabel()}</p>
+              <div>{listItem.renderLabel()}</div>
               <div className="direction-indicator">
                 {listItem.toggled ? '-' : '+'}
               </div>
