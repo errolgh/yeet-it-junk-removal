@@ -1,42 +1,27 @@
 import React, { useState, useRef } from 'react';
-import { IoLogoFacebook } from 'react-icons/io5';
-// import { IoLogoTwitter } from 'react-icons/io5'
-// import { IoLogoLinkedin } from 'react-icons/io5'
-import { IoLogoInstagram } from 'react-icons/io5';
-import { IoCall } from 'react-icons/io5';
-import { IoMailSharp } from 'react-icons/io5';
-import { IoLocationSharp } from 'react-icons/io5';
-import { Link } from 'gatsby';
-import { useForm } from 'react-hook-form';
-import { yupResolver } from '@hookform/resolvers/yup';
-import * as yup from 'yup';
 import Layout from '../components/Layout';
 import Button from '../components/Button';
+import {
+  IoLogoFacebook,
+  IoLogoInstagram,
+  IoCall,
+  IoMailSharp,
+  IoLocationSharp,
+} from 'react-icons/io5';
 import emailjs from '@emailjs/browser';
+import * as yup from 'yup';
+import { useFormik } from 'formik';
 
-// @TODO: once netlify is connected, check gatsby/netlify docs for anything else
-
-// const onSubmit = (data) => netlify.handleSubmit(null, data)
-
-// const EMAIL_REGEX = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}$/i
-const phoneRegExp =
-  /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
-
-const schema = yup.object().shape({
-  name: yup.string().required('Your Name is required'),
-  business: yup.string(),
-  email: yup.string().email().required('Email Address is required'),
-  number: yup.string().matches(phoneRegExp, 'Phone number is not valid'),
-  message: yup.string(),
-});
+const phoneRegExp = /^(\+\d{1,4}[\s-]?)?(\(\d{2,3}\)[\s-]?)?[\d\s-]{3,15}$/;
 
 const ContactForm = () => {
   const form = useRef();
   const [buttonText, setButtonText] = useState('Send');
+  const [disableSubmit, setDisableSubmit] = useState(false);
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-
+  const sendEmail = (values) => {
+    setButtonText('Sending...');
+    // console.log('form.current: ', form.current);
     emailjs
       .sendForm(
         `${process.env.SERVICE_ID}`,
@@ -48,29 +33,52 @@ const ContactForm = () => {
       )
       .then(
         () => {
-          console.log('form.current:', form.current);
           console.log('SUCCESS!');
           setButtonText('Sent!');
+          setDisableSubmit(true);
         },
         (error) => {
           console.log('FAILED...', error.text);
         }
       );
-    e.target.reset();
+    formik.handleReset();
   };
 
-  const {
-    register,
-    // handleSubmit,
-    formState: { errors },
-  } = useForm({
-    resolver: yupResolver(schema),
+  const formik = useFormik({
+    initialValues: {
+      name: '',
+      business: '',
+      email: '',
+      phone: '',
+      message: '',
+    },
+    onSubmit: (values) => {
+      console.log('onsubmit', values);
+      sendEmail(values);
+    },
+    validationSchema: yup.object({
+      name: yup
+        .string()
+        .max(40, 'Name must be 40 characters or less.')
+        .required('Your name is required.'),
+      business: yup
+        .string()
+        .max(60, 'Business Name must be 60 characters or less.'),
+      email: yup
+        .string()
+        .email()
+        .max(60, 'Your email must be 60 characters or less.')
+        .required('Your email address is required.'),
+      phone: yup
+        .string()
+        .matches(phoneRegExp, 'Phone number is not valid')
+        .required('Phone number is required'),
+      message: yup
+        .string()
+        .max(700, 'Your message must be 700 characters or less.'),
+    }),
   });
 
-  // handleSubmit & netlify-forms both provide a "data" object
-  // const onSubmit = (data) => {
-  //   console.log('first', data);
-  // };
   return (
     <Layout>
       <section
@@ -112,120 +120,135 @@ const ContactForm = () => {
               </div>
             </div>
             <div className="flex text-lg space-x-4 text-junkGreen">
-              <Link
+              <a
                 target="_blank"
                 rel="noreferrer"
                 to="https://www.facebook.com/people/Nevermore-Cleaning-Junk-Removal/61560563170433/"
               >
                 <IoLogoFacebook className="text-xl md:text-3xl" />
-              </Link>
-              {/* <Link to="/">
-              <IoLogoTwitter />
-            </Link>
-            <Link to="/">
-              <IoLogoLinkedin />
-            </Link> */}
-              <Link
+              </a>
+              <a
                 target="_blank"
                 rel="noreferrer"
                 to="https://www.instagram.com/letstalknevermore"
               >
                 <IoLogoInstagram className="text-xl md:text-3xl" />
-              </Link>
+              </a>
             </div>
           </div>
+          {/* FORM */}
           <div>
             <div className="relative bg-white shadow-lg rounded-xl p-8 text-gray-600 h-full">
               <form
-                ref={form}
                 className="flex flex-col space-y-2 text-sm md:w-80"
-                onSubmit={sendEmail}
-                // onSubmitt="submit"
-                // name="contact v1"
-                // method="POST"
-                // netlify... we're using emailJS right now
+                onSubmit={formik.handleSubmit}
+                ref={form}
               >
                 {/* name input */}
                 <div>
                   <input
                     type="text"
                     name="name"
+                    value={formik.values.name}
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
                     placeholder="Your Name"
                     className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-1 focus:ring-efferBlue"
-                    {...register('name')}
                   ></input>
-                  <span className="pl-3 text-red-500">
-                    {errors.name?.message}
-                  </span>
+                  <label className="pl-3 text-red-500">
+                    {formik.errors.name &&
+                      formik.touched.name &&
+                      formik.errors.name}
+                  </label>
                 </div>
                 {/* business input */}
                 <div>
                   <input
                     type="text"
                     name="business"
+                    value={formik.values.business}
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
                     placeholder="Your Business (Optional)"
                     className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-1 focus:ring-efferBlue"
-                    {...register('business')}
                   ></input>
-                  <span className="pl-3 text-red-500">
-                    {errors.business?.message}
-                  </span>
+                  <label className="pl-3 text-red-500">
+                    {formik.errors.business &&
+                      formik.touched.business &&
+                      formik.errors.business}
+                  </label>
                 </div>
                 {/* email input */}
                 <div>
                   <input
                     type="email"
                     name="email"
+                    value={formik.values.email}
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
                     placeholder="Email Address"
                     className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-1 focus:ring-efferBlue"
-                    {...register('email')}
                   ></input>
-                  <span className="pl-3 text-red-500">
-                    {errors.email?.message}
-                  </span>
+                  <label className="pl-3 text-red-500">
+                    {formik.errors.email &&
+                      formik.touched.email &&
+                      formik.errors.email}
+                  </label>
                 </div>
                 {/* phone input */}
                 <div>
                   <input
                     type="text"
                     name="phone"
+                    value={formik.values.phone}
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
                     placeholder="Phone Number"
                     className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-1 focus:ring-efferBlue"
-                    {...register('phone')}
                   ></input>
-                  <span className="pl-3 text-red-500">
-                    {errors.phone?.message}
-                  </span>
+                  <label className="pl-3 text-red-500">
+                    {formik.errors.phone &&
+                      formik.touched.phone &&
+                      formik.errors.phone}
+                  </label>
                 </div>
                 {/* message input */}
                 <div>
                   <textarea
                     rows="4"
                     name="message"
+                    value={formik.values.message}
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
                     placeholder="Type your message here."
                     className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-1 focus:ring-efferBlue"
-                    {...register('message')}
                   ></textarea>
-                  <span className="pl-3 text-red-500">
-                    {errors.message?.message}
-                  </span>
+                  <label className="text-red-500">
+                    {formik.errors.message &&
+                      formik.touched.message &&
+                      formik.errors.message}
+                  </label>
+                  <div className="mt-1 text-right">
+                    <span
+                      className={`text-xs ${
+                        formik.values.message.length > 700
+                          ? 'text-red-500'
+                          : 'text-gray-400'
+                      }`}
+                    >
+                      {`${formik.values.message.length}/700`}
+                    </span>
+                  </div>
                 </div>
-
                 {/* Submission Elements */}
                 <Button
-                  order="primary"
+                  disabled={disableSubmit}
                   type="submit"
+                  order="primary"
                   className="inline-block w-full md:w-auto self-end bg-brandPrimary font-bold text-white rounded-lg px-6 py-2 uppercase"
                 >
                   {buttonText}
                 </Button>
-                {/* as per netlify forms: */}
-                <input
-                  type="submit"
-                  value="Send"
-                  className="hidden"
-                  name="from_contact"
-                />
               </form>
             </div>
           </div>
