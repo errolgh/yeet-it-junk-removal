@@ -19,7 +19,7 @@ const ContactForm = () => {
   const [buttonText, setButtonText] = useState('Send');
   const [disableSubmit, setDisableSubmit] = useState(false);
 
-  const sendEmail = (values) => {
+  const sendEmail = () => {
     // e.preventDefault()
     setButtonText('Sending...');
     // console.log('form.current: ', form.current);
@@ -28,9 +28,7 @@ const ContactForm = () => {
         `${process.env.GATBSY_SERVICE_ID}`,
         `${process.env.GATBSY_TEMPLATE_ID}`,
         form.current,
-        {
-          publicKey: `${process.env.GATBSY_PUBLIC_KEY}`,
-        }
+        `${process.env.GATBSY_PUBLIC_KEY}`
       )
       .then(
         () => {
@@ -41,7 +39,7 @@ const ContactForm = () => {
         (error) => {
           console.log('FAILED...', error.text);
           setButtonText('Send');
-          setDisableSubmit(false)
+          setDisableSubmit(false);
         }
       );
     formik.handleReset();
