@@ -53,5 +53,15 @@ module.exports = {
         display: `standalone`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-env-variables',
+      options: {
+        allowList: [
+          'GATSBY_SERVICE_ID',
+          'GATSBY_TEMPLATE_ID',
+          'GATSBY_PUBLIC_KEY',
+        ],
+      },
+    },
   ],
 };

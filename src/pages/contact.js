@@ -25,11 +25,11 @@ const ContactForm = () => {
     // console.log('form.current: ', form.current);
     emailjs
       .sendForm(
-        `${process.env.SERVICE_ID}`,
-        `${process.env.TEMPLATE_ID}`,
+        `${process.env.GATBSY_SERVICE_ID}`,
+        `${process.env.GATBSY_TEMPLATE_ID}`,
         form.current,
         {
-          publicKey: `${process.env.PUBLIC_KEY}`,
+          publicKey: `${process.env.GATBSY_PUBLIC_KEY}`,
         }
       )
       .then(
@@ -40,7 +40,7 @@ const ContactForm = () => {
         },
         (error) => {
           console.log('FAILED...', error.text);
-          setButtonText('Send...');
+          setButtonText('Send');
           setDisableSubmit(false)
         }
       );
