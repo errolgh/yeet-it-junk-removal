@@ -20,6 +20,7 @@ const ContactForm = () => {
   const [disableSubmit, setDisableSubmit] = useState(false);
 
   const sendEmail = (values) => {
+    // e.preventDefault()
     setButtonText('Sending...');
     // console.log('form.current: ', form.current);
     emailjs
@@ -39,6 +40,7 @@ const ContactForm = () => {
         },
         (error) => {
           console.log('FAILED...', error.text);
+          setButtonText('Send...');
         }
       );
     formik.handleReset();
@@ -52,10 +54,7 @@ const ContactForm = () => {
       phone: '',
       message: '',
     },
-    onSubmit: (values) => {
-      console.log('onsubmit', values);
-      sendEmail(values);
-    },
+    onSubmit: sendEmail,
     validationSchema: yup.object({
       name: yup
         .string()
