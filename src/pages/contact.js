@@ -41,6 +41,7 @@ const ContactForm = () => {
         (error) => {
           console.log('FAILED...', error.text);
           setButtonText('Send...');
+          setDisableSubmit(false)
         }
       );
     formik.handleReset();
