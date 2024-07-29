@@ -19,13 +19,13 @@ const ContactForm = () => {
   const [disableSubmit, setDisableSubmit] = useState(false);
 
   const sendEmail = () => {
-    setButtonText('Sending...');;
+    setButtonText('Sending...');
     emailjs
       .sendForm(
-        `${process.env.SERVICE_ID}`,
-        `${process.env.TEMPLATE_ID}`,
+        process.env.SERVICE_ID,
+        process.env.TEMPLATE_ID,
         form.current,
-        { publicKey: process.env.PUBLIC_KEY }
+        process.env.PUBLIC_KEY
       )
       .then(
         () => {
