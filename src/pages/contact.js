@@ -1,6 +1,5 @@
 import React, { useState, useRef } from 'react';
 import Layout from '../components/Layout';
-import Button from '../components/Button';
 import {
   IoLogoFacebook,
   IoLogoInstagram,
@@ -20,19 +19,18 @@ const ContactForm = () => {
   const [disableSubmit, setDisableSubmit] = useState(false);
 
   const sendEmail = () => {
-    // e.preventDefault()
-    setButtonText('Sending...');
-    // console.log('form.current: ', form.current);
+    setButtonText('Sending...');;
     emailjs
       .sendForm(
-        `${process.env.GATBSY_SERVICE_ID}`,
-        `${process.env.GATBSY_TEMPLATE_ID}`,
+        `${process.env.SERVICE_ID}`,
+        `${process.env.TEMPLATE_ID}`,
         form.current,
-        `${process.env.GATBSY_PUBLIC_KEY}`
+        { publicKey: process.env.PUBLIC_KEY }
       )
       .then(
         () => {
           console.log('SUCCESS!');
+          formik.handleReset();
           setButtonText('Sent!');
           setDisableSubmit(true);
         },
@@ -42,7 +40,6 @@ const ContactForm = () => {
           setDisableSubmit(false);
         }
       );
-    formik.handleReset();
   };
 
   const formik = useFormik({
@@ -98,10 +95,10 @@ const ContactForm = () => {
               </p>
             </div>
             <div className="flex flex-col space-y-6">
-              <a href="sms:+19084721977">
+              <a href="sms:+14438838595">
                 <div className="inline-flex space-x-2 items-center">
                   <IoCall className="text-junkGreen text-xl md:text-3xl" />
-                  <span className="text-gray-600">(908) 472-1977</span>
+                  <span className="text-gray-600">(443)883-8595</span>
                 </div>
               </a>
               <a href="mailto:LetsTalkNevermore@gmail.com">
@@ -121,14 +118,14 @@ const ContactForm = () => {
               <a
                 target="_blank"
                 rel="noreferrer"
-                to="https://www.facebook.com/people/Nevermore-Cleaning-Junk-Removal/61560563170433/"
+                href="https://www.facebook.com/people/Nevermore-Cleaning-Junk-Removal/61560563170433/"
               >
                 <IoLogoFacebook className="text-xl md:text-3xl" />
               </a>
               <a
                 target="_blank"
                 rel="noreferrer"
-                to="https://www.instagram.com/letstalknevermore"
+                href="https://www.instagram.com/letstalknevermore"
               >
                 <IoLogoInstagram className="text-xl md:text-3xl" />
               </a>
@@ -239,14 +236,13 @@ const ContactForm = () => {
                   </div>
                 </div>
                 {/* Submission Elements */}
-                <Button
+                <button
                   disabled={disableSubmit}
                   type="submit"
-                  order="primary"
-                  className="inline-block w-full md:w-auto self-end bg-brandPrimary font-bold text-white rounded-lg px-6 py-2 uppercase"
+                  className="mt-4 py-4 px-8 text-xl font-bold rounded-md lg:py-4 focus:outline-none shadow-xl bg-indigo-600 text-gray-100 hover:bg-indigo-700 hover:text-slate-800 inline-block w-full md:w-auto"
                 >
                   {buttonText}
-                </Button>
+                </button>
               </form>
             </div>
           </div>
