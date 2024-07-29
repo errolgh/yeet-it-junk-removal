@@ -36,7 +36,7 @@ const ContactForm = () => {
         },
         (error) => {
           console.log('FAILED...', error.text);
-          setButtonText('Send');
+          setButtonText('Error :(');
           setDisableSubmit(false);
         }
       );
