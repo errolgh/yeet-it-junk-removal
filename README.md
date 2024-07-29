@@ -55,7 +55,4 @@ Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
 
 # yeet-it-junk-removal
 
-
-for safari border issue (to be injected through gatsby plugin) - 
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+Google Analytics Triggers Video: https://www.youtube.com/watch?v=wX9euOw4mGY&ab_channel=GuidingDigital

@@ -147,7 +147,7 @@ const ContactForm = () => {
                     value={formik.values.name}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
-                    placeholder="Your Name"
+                    placeholder="Your first & last name"
                     className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-1 focus:ring-efferBlue"
                   ></input>
                   <label className="pl-3 text-red-500">
@@ -164,7 +164,7 @@ const ContactForm = () => {
                     value={formik.values.business}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
-                    placeholder="Your Business (Optional)"
+                    placeholder="Your business (optional)"
                     className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-1 focus:ring-efferBlue"
                   ></input>
                   <label className="pl-3 text-red-500">
@@ -181,7 +181,7 @@ const ContactForm = () => {
                     value={formik.values.email}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
-                    placeholder="Email Address"
+                    placeholder="Email address"
                     className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-1 focus:ring-efferBlue"
                   ></input>
                   <label className="pl-3 text-red-500">
@@ -198,7 +198,7 @@ const ContactForm = () => {
                     value={formik.values.phone}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
-                    placeholder="Phone Number"
+                    placeholder="Phone number"
                     className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-1 focus:ring-efferBlue"
                   ></input>
                   <label className="pl-3 text-red-500">
