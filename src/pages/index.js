@@ -131,10 +131,10 @@ const IndexPage = () => {
             <li className="feature-list-item">
               You can snap pictures and send via text at{' '}
               <a
-                href="sms:+19084721977"
+                href="sms:+14438838595"
                 className="font-bold underline text-black"
               >
-                +1(908)472-1977
+                +1(443)883-8595
               </a>{' '}
               or email us at{' '}
               <a
