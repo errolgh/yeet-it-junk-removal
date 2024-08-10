@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from './Nav';
 import Footer from './Footer';
+import GratefulPlug from './GratefulPlug';
 import { motion as m } from 'framer-motion';
 
 export default function Layout({ children }) {
@@ -27,6 +28,7 @@ export default function Layout({ children }) {
         {children}
       </m.main>
       <Footer />
+      <GratefulPlug />
     </div>
   );
 }

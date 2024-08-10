@@ -47,7 +47,6 @@ module.exports = {
         short_name: `GatsbyJS`,
         start_url: `/`,
         icon: `src/images/nevermorelogo-orange.png`,
-        favicon: `src/images/nevermorelogo-orange.png`,
         background_color: `#000000`,
         theme_color: `#000000`,
         display: `standalone`,
