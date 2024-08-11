@@ -46,10 +46,10 @@ export default function TailwindUIHero() {
         </div>
         <div className="text-center">
           <h1 className="text-4xl font-bold tracking-tight text-gray-200 sm:text-5xl md:text-6xl">
-            Affordable Junk Removal and Clean Up
+            Affordable Cleaning & Junk Removal
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            Your Go-To Service for Efficient Junk Removal and Cleaning
+            Your Go-To Service for Efficient Property Maintenance
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a

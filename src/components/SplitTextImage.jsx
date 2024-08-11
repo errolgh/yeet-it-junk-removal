@@ -22,7 +22,7 @@ export default function SplitTextImage(props, children) {
           <br />
           <p className="max-w-xl">
             Choose us for professional, kind, and budget-friendly
-            junk removal & cleaning that puts your space first.
+            cleaning and junk removal that puts your space first.
           </p>
         </div>
         {/* Image */}

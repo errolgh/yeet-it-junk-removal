@@ -34,8 +34,8 @@ const IndexPage = () => {
           </h2>
           <div className="h-2 w-1/2 mb-4 bg-gradient-to-r from-junkGreen to-transparent" />
           <p className="mb-6">
-            At Nevermore, we excel in three core areas: junk removal, exterior
-            cleaning, and comprehensive interior cleaning. Whether you're
+            At Nevermore, we excel in three core areas: comprehensive interior cleaning, exterior
+            cleaning, and bulk junk removal. Whether you're
             preparing properties for turnovers, maintaining commercial spaces,
             or seeking top-notch home cleaning solutions, we ensure your spaces
             are spotless and clutter-free.

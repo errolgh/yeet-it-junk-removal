@@ -9,6 +9,26 @@ const ourServices = [
     id: 0,
     renderLabel: () => (
       <h3 className="font-bold text-xl md:text-2xl mt-6 mb-3 font-sans">
+        Interior Cleaning
+      </h3>
+    ),
+    renderContent: () => (
+      <ul className="mb-6">
+        <li className="feature-list-item">
+          <strong>Residential:</strong> Cleaning for homes and apartments to
+          maintain comfort and hygiene.
+        </li>
+        <li className="feature-list-item">
+          <strong>Commercial:</strong> Comprehensive cleaning for offices and
+          facilities to create a professional atmosphere.
+        </li>
+      </ul>
+    ),
+  },
+  {
+    id: 1,
+    renderLabel: () => (
+      <h3 className="font-bold text-xl md:text-2xl mt-6 mb-3 font-sans">
         Exterior Cleaning
       </h3>
     ),
@@ -28,26 +48,7 @@ const ourServices = [
       </ul>
     ),
   },
-  {
-    id: 1,
-    renderLabel: () => (
-      <h3 className="font-bold text-xl md:text-2xl mt-6 mb-3 font-sans">
-        Interior Cleaning
-      </h3>
-    ),
-    renderContent: () => (
-      <ul className="mb-6">
-        <li className="feature-list-item">
-          <strong>Residential:</strong> Cleaning for homes and apartments to
-          maintain comfort and hygiene.
-        </li>
-        <li className="feature-list-item">
-          <strong>Commercial:</strong> Comprehensive cleaning for offices and
-          facilities to create a professional atmosphere.
-        </li>
-      </ul>
-    ),
-  },
+ 
   {
     id: 2,
     renderLabel: () => (
