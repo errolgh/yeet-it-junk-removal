@@ -3,6 +3,7 @@ import Layout from '../components/Layout.jsx';
 import { Link } from 'gatsby';
 import Button from '../components/Button.jsx';
 import Accordion from '../components/Accordion.jsx';
+import OurPartners from '../components/OurPartners';
 
 const ourServices = [
   {
@@ -48,7 +49,7 @@ const ourServices = [
       </ul>
     ),
   },
- 
+
   {
     id: 2,
     renderLabel: () => (
@@ -228,6 +229,7 @@ const ServicesPage = () => {
           </Link>
         </div> */}
       </section>
+      <OurPartners />
     </Layout>
   );
 };

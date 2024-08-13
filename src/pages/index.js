@@ -5,7 +5,6 @@ import CTABanner from '../components/CTABanner';
 import SplitTextImage from '../components/SplitTextImage';
 import ThreeFeatureIcons from '../components/ThreeFeatureIcons';
 import TailwindUIHero from '../components/TailwindUIHero';
-import OurPartners from '../components/OurPartners';
 import { Link } from 'gatsby';
 
 // export const Head = () => (
@@ -34,8 +33,8 @@ const IndexPage = () => {
           </h2>
           <div className="h-2 w-1/2 mb-4 bg-gradient-to-r from-junkGreen to-transparent" />
           <p className="mb-6">
-            At Nevermore, we excel in three core areas: comprehensive interior cleaning, exterior
-            cleaning, and bulk junk removal. Whether you're
+            At Nevermore, we excel in three core areas: comprehensive interior
+            cleaning, exterior cleaning, and bulk junk removal. Whether you're
             preparing properties for turnovers, maintaining commercial spaces,
             or seeking top-notch home cleaning solutions, we ensure your spaces
             are spotless and clutter-free.
@@ -151,8 +150,6 @@ const IndexPage = () => {
           </ol>
         </div>
       </section>
-
-      <OurPartners />
     </Layout>
   );
 };
