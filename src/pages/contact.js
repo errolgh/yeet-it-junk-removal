@@ -119,6 +119,7 @@ const ContactForm = () => {
                 target="_blank"
                 rel="noreferrer"
                 href="https://www.facebook.com/people/Nevermore-Cleaning-Junk-Removal/61560563170433/"
+                aria-label="Visit our Facebook page"
               >
                 <IoLogoFacebook className="text-xl md:text-3xl" />
               </a>
@@ -126,6 +127,7 @@ const ContactForm = () => {
                 target="_blank"
                 rel="noreferrer"
                 href="https://www.instagram.com/letstalknevermore"
+                aria-label="Visit our Instagram page"
               >
                 <IoLogoInstagram className="text-xl md:text-3xl" />
               </a>

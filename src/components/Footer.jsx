@@ -116,6 +116,7 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer"
               href="https://www.facebook.com/people/Nevermore-Cleaning-Junk-Removal/61560563170433/"
+              aria-label="Visit our Facebook page"
             >
               <IoLogoFacebook className="text-4xl" />
             </a>
@@ -123,6 +124,7 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer"
               href="https://www.instagram.com/letstalknevermore"
+              aria-label="Visit our Instagram page"
             >
               <IoLogoInstagram className="text-4xl" />
             </a>

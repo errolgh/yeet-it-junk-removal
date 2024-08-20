@@ -60,6 +60,7 @@ export default function Nav() {
             onClick={() => setOpen(!open)}
             id="menu-btn"
             type="button"
+            aria-label={open ? 'Close menu' : 'Open menu'}
             className={`${
               open ? 'open' : ''
             } z-40 block hamburger md:hidden focus:outline-none focus:ring-blue-50`}
