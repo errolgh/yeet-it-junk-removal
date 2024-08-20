@@ -17,6 +17,9 @@ export default function Nav() {
                 alt="Nevermore Cleaning & Junk Removal logo"
                 aria-hidden="true"
                 role="presentation"
+                loading="eager" // Ensure it's loaded quickly
+                placeholder="blurred" // Placeholder to enhance perceived load time
+                formats={['auto', 'webp', 'avif']}
               />
             </div>
             <div className="flex flex-col text-center justify-center z-10 text-slate-200">
