@@ -20,6 +20,10 @@ const mediaNode = (
         alt="Storefront"
         className="tint w-full h-[91vh] object-cover"
         loading="eager"
+        layout="constrained"  // Optimize image size based on container
+        placeholder="blurred"  // Use a low-res blurred placeholder
+        width={1200}  // Specify the maximum width needed
+        height={800}  // Specify the maximum height needed
       />
     </div>
     <div>
@@ -28,6 +32,10 @@ const mediaNode = (
         alt="Mopping"
         className="tint w-full h-[91vh] object-cover"
         loading="lazy"
+        layout="constrained"  // Optimize image size based on container
+        placeholder="blurred"  // Use a low-res blurred placeholder
+        width={1200}  // Specify the maximum width needed
+        height={800}  // Specify the maximum height needed
       />
     </div>
     <div>
@@ -36,6 +44,10 @@ const mediaNode = (
         alt="Skyscraper"
         className="tint w-full h-[91vh] object-cover"
         loading="lazy"
+        layout="constrained"  // Optimize image size based on container
+        placeholder="blurred"  // Use a low-res blurred placeholder
+        width={1200}  // Specify the maximum width needed
+        height={800}  // Specify the maximum height needed
       />
     </div>
   </Carousel>

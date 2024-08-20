@@ -151,10 +151,10 @@ aside {
 .animate-li > li:nth-child(1) {
   transition: all 0.5s ease 0.2s;
   transition-delay: 0.2s;
-  &:hover {
-    transition-delay: none;
-    transition: all 0.3s;
-  }
+}
+.animate-li > li:nth-child(1):hover {
+  transition-delay: 0s; /* Equivalent to `none` */
+  transition: all 0.3s;
 }
 
 .animate-li > li:nth-child(2) {
