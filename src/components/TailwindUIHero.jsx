@@ -59,7 +59,7 @@ export default function TailwindUIHero() {
       {mediaNode}
       <div className="left-0 right-0 sm:top-[24px] top-[40px] absolute max-w-2xl py-28 m-auto lg:py-40 justify-center flex flex-col align-middle">
         <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-          <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-200 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+          <div className="relative rounded-full px-3 py-3 text-sm leading-6 text-gray-200 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
             Black and Queer owned Business in Baltimore.{' '}
             <a href="/about" className="font-semibold text-indigo-600">
               <span className="absolute inset-0" aria-hidden="true" />

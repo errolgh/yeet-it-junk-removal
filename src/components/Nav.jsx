@@ -37,26 +37,18 @@ export default function Nav() {
         flex flex-col space-y-6 font-alata md:p-4 md:h-10 md:bg-transparent md:w-min
         md:visible md:flex-row md:space-x-8 md:space-y-0 md:static md:mb-6 md:pt-10 md:items-center`}
         >
-          <li className="hover:text-white">
-            <Link to="/" activeClassName="active">
-              Home
-            </Link>
-          </li>
-          <li className="hover:text-white">
-            <Link to="/services/" activeClassName="active">
-              Services
-            </Link>
-          </li>
-          <li className="hover:text-white">
-            <Link to="/about/" activeClassName="active">
-              About
-            </Link>
-          </li>
-          <li className="hover:text-white">
-            <Link to="/contact/" activeClassName="active">
-              Contact&nbsp;Us
-            </Link>
-          </li>
+          <Link to="/" activeClassName="active">
+            <li className="py-3 hover:text-white">Home</li>
+          </Link>
+          <Link to="/services/" activeClassName="active">
+            <li className="py-3 hover:text-white">Services</li>
+          </Link>
+          <Link to="/about/" activeClassName="active">
+            <li className="py-3 hover:text-white">About</li>
+          </Link>
+          <Link to="/contact/" activeClassName="active">
+            <li className="py-3 hover:text-white">Contact&nbsp;Us</li>
+          </Link>
         </ul>
 
         {/*  Hamburger Button  */}
