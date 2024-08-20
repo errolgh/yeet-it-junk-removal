@@ -1,7 +1,5 @@
 import React from 'react';
-import CantonCleaningLogo from '../images/canton-cleaning-logo.png';
-// import NevermoreLogoOrange from '../images/nevermorelogo-orange.png';
-import BMGLogo from '../images/bmg-logo.webp';
+import { StaticImage } from "gatsby-plugin-image"
 
 export default function OurPartners() {
   return (
@@ -15,7 +13,7 @@ export default function OurPartners() {
 
         <div className="flex md:flex-row flex-col md:justify-around items-center w-full">
           {/* <div className="max-w-[330px]">
-            <img
+            <StaticImage
               src={NevermoreLogoOrange}
               alt="Nevermore Property Maintenance"
             />
@@ -26,7 +24,7 @@ export default function OurPartners() {
             href="https://www.cantoncleaningco.com/"
           >
             <div className="max-w-[200px] mb-20 md:mb-0">
-              <img src={CantonCleaningLogo} alt="Canton Cleaning" />
+              <StaticImage loadin='lazy' src='../images/canton-cleaning-logo.png' alt="Canton Cleaning" />
             </div>
           </a>
           <a
@@ -35,7 +33,7 @@ export default function OurPartners() {
             href="https://www.baymgmtgroup.com/"
           >
             <div className="max-w-[250px]">
-              <img src={BMGLogo} alt="Bay Property Mangement Group" />
+              <StaticImage loading='lazy' src='../images/bmg-logo.webp' alt="Bay Property Mangement Group" />
             </div>
           </a>
         </div>

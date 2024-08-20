@@ -1,5 +1,5 @@
 import * as React from 'react';
-import skyline from '../images/baltimore_harbor.jpg';
+import { StaticImage } from "gatsby-plugin-image"
 
 export default function SplitTextImage(props, children) {
   return (
@@ -27,10 +27,11 @@ export default function SplitTextImage(props, children) {
         </div>
         {/* Image */}
         <div className="mx-auto flex justify-center align-center">
-          <img
-            src={skyline}
-            alt=""
+          <StaticImage
+            src='../images/baltimore_harbor.jpg'
+            alt="skyline"
             className="shadow-2xl object-cover rounded-lg"
+            loading='lazy'
           />
         </div>
       </div>

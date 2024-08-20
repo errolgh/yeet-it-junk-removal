@@ -1,14 +1,11 @@
-import { useEffect } from 'react';
 import * as React from 'react';
 import Layout from '../components/Layout.jsx';
 import FormfacadeEmbed from '@formfacade/embed-react';
-// import { Link } from 'gatsby';
-// import Button from '../components/Button.jsx';
 
 const CCOPage = () => {
   return (
     <Layout>
-      <div className="my-8 px-4">
+      <div className="mt-8 mb-24 px-4">
         <FormfacadeEmbed
           formFacadeURL="https://formfacade.com/include/110462996932306478338/form/1FAIpQLSeHOHz6oVQ1rM6cCARfBJUcor39_4FF4N1iHQqzFEtM_SW7Tw/classic.js/?div=ff-compose"
           onSubmitForm={() => console.log('Form submitted')}
@@ -22,6 +19,7 @@ export default CCOPage;
 
 export const Head = () => (
   <>
+    <html lang="en" />
     <title>
       Commercial Client Onboarding | Nevermore Cleaning & Junk Removal
     </title>

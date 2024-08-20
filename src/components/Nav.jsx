@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Logo from '../images/logo.png';
 import { Link } from 'gatsby';
+import { StaticImage } from "gatsby-plugin-image"
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
@@ -12,7 +12,7 @@ export default function Nav() {
           <div className="flex">
             {/*  Logo  */}
             <div className="flex w-20 p-1 relative z-50">
-              <img src={Logo} alt="Nevermore Cleaning & Junk Removal logo" />
+              <StaticImage src='../images/logo.png' alt="Nevermore Cleaning & Junk Removal logo" />
             </div>
             <div className="flex flex-col text-center justify-center z-10 text-slate-200">
               <span className="text-xl tracking-widest text-black font-bold">

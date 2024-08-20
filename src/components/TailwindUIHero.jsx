@@ -1,10 +1,6 @@
 import React from 'react';
-import storefront from '../images/storefront.jpg';
-import mopping from '../images/mopping.jpg';
-import skyscraper from '../images/skyscraper.jpg';
 import { Carousel } from 'antd';
-
-const images = [storefront, mopping, skyscraper];
+import { StaticImage } from 'gatsby-plugin-image';
 
 const mediaNode = (
   <Carousel
@@ -18,15 +14,30 @@ const mediaNode = (
     easing="easeInOutBack"
     className="relative"
   >
-    {images.map((slide, index) => (
-      <div key={index}>
-        <img
-          src={slide}
-          alt={`Slide ${index + 1}`}
-          className="tint w-full h-[91vh] object-cover"
-        />
-      </div>
-    ))}
+    <div>
+      <StaticImage
+        src="../images/storefront.jpg"
+        alt="Storefront"
+        className="tint w-full h-[91vh] object-cover"
+        loading="eager"
+      />
+    </div>
+    <div>
+      <StaticImage
+        src="../images/mopping.jpg"
+        alt="Mopping"
+        className="tint w-full h-[91vh] object-cover"
+        loading="lazy"
+      />
+    </div>
+    <div>
+      <StaticImage
+        src="../images/skyscraper.jpg"
+        alt="Skyscraper"
+        className="tint w-full h-[91vh] object-cover"
+        loading="lazy"
+      />
+    </div>
   </Carousel>
 );
 

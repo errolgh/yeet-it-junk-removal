@@ -256,6 +256,7 @@ export default ContactForm;
 
 export const Head = () => (
   <>
+    <html lang="en" />
     <title>Contact Us | Nevermore Cleaning & Junk Removal</title>
     <meta charSet="utf-8" />
     <meta
