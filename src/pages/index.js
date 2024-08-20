@@ -7,14 +7,6 @@ import ThreeFeatureIcons from '../components/ThreeFeatureIcons';
 import TailwindUIHero from '../components/TailwindUIHero';
 import { Link } from 'gatsby';
 
-// export const Head = () => (
-//   <>
-//     <meta charSet="utf-8" />
-//     <title>Nevermore Cleaning & Junk Removal - Home</title>
-//     <meta name content />
-//   </>
-// );
-
 const IndexPage = () => {
   return (
     <Layout>
