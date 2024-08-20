@@ -233,7 +233,7 @@ export default AboutPage;
 
 export const Head = () => (
   <>
-    <title>Nevermore Cleaning & Junk Removal</title>
+    <title>About | Nevermore Cleaning & Junk Removal</title>
     <meta charSet="utf-8" />
     <meta
       name="description"
