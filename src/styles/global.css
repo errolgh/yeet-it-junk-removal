@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Ubuntu:wght@400;500;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Ubuntu:wght@400;500;700&display=swap'); */
 
 /* @TODO: CSS variables maybe, not sure of the tailwind ideology, but `@apply` should be applied with some consideration */
 
@@ -61,15 +61,18 @@ span {
 
 .feature-list-item {
   margin-bottom: 12px;
+  color: #4a5568; /* text-gray-600 */
+  line-height: 2rem; /* leading-8 */
+  font-weight: 500; /* font-medium */
+}
 
-  /* <li> styling: */
-  @apply text-gray-600 leading-8 font-medium;
-
-  /* styled bullet styling: */
-  &:before {
-    content: '+';
-    @apply text-junkGreen mr-2 font-extrabold text-lg;
-  }
+/* Style the bullet using a separate class */
+.feature-list-item::before {
+  content: '+';
+  color: #38a169; /* text-junkGreen */
+  margin-right: 0.5rem; /* mr-2 */
+  font-weight: 800; /* font-extrabold */
+  font-size: 1.125rem; /* text-lg */
 }
 
 aside {
