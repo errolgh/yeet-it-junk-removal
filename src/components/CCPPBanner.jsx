@@ -29,7 +29,7 @@ function useStickyState(defaultValue, key) {
 }
 
 const CCPPBanner = () => {
-  const location = useLocation();
+  // const location = useLocation();
   // if (isBrowser()) {
   //   initializeAndTrack(location);
   // }
@@ -40,12 +40,12 @@ const CCPPBanner = () => {
   );
 
   const EnableAnalytics = () => {
-    document.cookie = 'gatsby-gdpr-google-analytics=true';
+    // document.cookie = 'gatsby-gdpr-google-analytics=true';
     setBannerHidden(true);
   };
 
   const DeclineAnalytics = () => {
-    document.cookie = 'gatsby-gdpr-google-analytics=false';
+    // document.cookie = 'gatsby-gdpr-google-analytics=false';
     setBannerHidden(true);
   };
 
