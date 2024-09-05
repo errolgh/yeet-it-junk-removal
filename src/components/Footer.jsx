@@ -67,49 +67,71 @@ export default function Footer() {
                 Contact&nbsp;Us
               </Link>
             </div>
+            {/* Compliance */}
+            <div className="mb-5  text-black capitalize">_</div>
+            <div className="flex flex-col items-center space-y-3 ">
+              <Link
+                target="_blank"
+                rel="noreferrer"
+                to="/privacy-policy"
+                className="capitalize text-black mb-1 hover:underline hover:font-bold"
+              >
+                Privacy Policy
+              </Link>
+            </div>
+            <div className="flex flex-col items-center space-y-3 ">
+              <Link
+                target="_blank"
+                rel="noreferrer"
+                to="/terms-of-service"
+                className="capitalize text-black mb-1 hover:underline hover:font-bold"
+              >
+                Terms of Service
+              </Link>
+            </div>
           </div>
           {/*  Menu 2  */}
           {/* <div className="flex flex-col items-center w-full md:items-start">
             <div className="mb-5 font-bold text-black capitalize">Services</div>
             <div className="flex flex-col items-center space-y-3 md:items-start">
-              <AnchorLink
+              <Link
                 to="/services#web-development"
                 className="capitalize text-black mb-1 hover:text-teal-400"
               >
                 Web Development
-              </AnchorLink>
+              </Link>
             </div>
             <div className="flex flex-col items-center space-y-3 md:items-start">
-              <AnchorLink
+              <Link
                 to="/services#web-design"
                 className="capitalize text-black mb-1 hover:text-teal-400"
               >
                 Web Design
-              </AnchorLink>
+              </Link>
             </div>
             <div className="flex flex-col items-center space-y-3 md:items-start">
-              <AnchorLink
+              <Link
                 to="/services#digital-marketing"
                 className="capitalize text-black mb-1 hover:text-teal-400"
               >
                 Digital Marketing
-              </AnchorLink>
+              </Link>
             </div>
             <div className="flex flex-col items-center space-y-3 md:items-start">
-              <AnchorLink
+              <Link
                 to="/services#on-demand"
                 className="capitalize text-black mb-1 hover:text-teal-400"
               >
                 On-Demand
-              </AnchorLink>
+              </Link>
             </div>
             <div className="flex flex-col items-center space-y-3 md:items-start">
-              <AnchorLink
+              <Link
                 to="/services#support"
                 className="capitalize text-black mb-1 hover:text-teal-400"
               >
                 Support
-              </AnchorLink>
+              </Link>
             </div>
           </div> */}
         </div>
