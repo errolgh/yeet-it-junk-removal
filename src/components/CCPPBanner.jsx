@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLocation } from '@reach/router';
-import { initializeAndTrack } from 'gatsby-plugin-gdpr-cookies';
+// import { initializeAndTrack } from 'gatsby-plugin-gdpr-cookies';
 
 function isBrowser() {
   return typeof window !== 'undefined';
@@ -30,9 +30,9 @@ function useStickyState(defaultValue, key) {
 
 const CCPPBanner = () => {
   const location = useLocation();
-  if (isBrowser()) {
-    initializeAndTrack(location);
-  }
+  // if (isBrowser()) {
+  //   initializeAndTrack(location);
+  // }
 
   const [bannerHidden, setBannerHidden] = useStickyState(
     false,
@@ -96,7 +96,7 @@ const CCPPBanner = () => {
                 </a>
                 .{' '}
               </p>
-              
+
             </div>
             <div className="flex gap-5 px-8 mx-auto">
               <button
