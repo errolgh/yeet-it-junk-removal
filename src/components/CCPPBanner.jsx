@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLocation } from '@reach/router';
+// import { useLocation } from '@reach/router';
 // import { initializeAndTrack } from 'gatsby-plugin-gdpr-cookies';
 
 function isBrowser() {
@@ -67,6 +67,7 @@ const CCPPBanner = () => {
               type="button"
               className="absolute flex ml-auto top-px-10 right-2"
               onClick={CloseBanner}
+              aria-label="Close banner"
             >
               <svg
                 className="w-5 h-5"
