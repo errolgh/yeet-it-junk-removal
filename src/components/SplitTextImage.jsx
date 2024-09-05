@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StaticImage } from "gatsby-plugin-image"
+import { StaticImage } from 'gatsby-plugin-image';
 
 export default function SplitTextImage(props, children) {
   return (
@@ -7,10 +7,7 @@ export default function SplitTextImage(props, children) {
       <div className="mx-auto flex flex-col md:flex-row px-8 space-y-8 md:space-x-16 md:justify-around md:space-y-0 mb-12 md:pl-20">
         <div className="">
           <h2 className="text-2xl md:text-4xl font-sans font-bold mb-4 mt-16">
-            Who We{' '}
-            <span className="text-junkGreen text-2xl md:text-4xl font-bold">
-              Are
-            </span>
+            Who We Are
           </h2>
           <div className="h-2 w-1/2 mb-4 bg-gradient-to-r from-junkGreen to-transparent" />
           <p className="max-w-xl">
@@ -21,17 +18,17 @@ export default function SplitTextImage(props, children) {
           </p>
           <br />
           <p className="max-w-xl">
-            Choose us for professional, kind, and budget-friendly
-            cleaning and junk removal that puts your space first.
+            Choose us for professional, kind, and budget-friendly cleaning and
+            junk removal that puts your space first.
           </p>
         </div>
         {/* Image */}
         <div className="mx-auto flex justify-center align-center">
           <StaticImage
-            src='../images/baltimore_harbor.jpg'
+            src="../images/baltimore_harbor.jpg"
             alt="skyline"
             className="shadow-2xl object-cover rounded-lg"
-            loading='lazy'
+            loading="lazy"
           />
         </div>
       </div>

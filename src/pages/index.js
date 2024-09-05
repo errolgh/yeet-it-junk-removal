@@ -18,10 +18,7 @@ const IndexPage = () => {
       <section id="what-we-do" className="mt-20 mb-20 px-12 mx-auto max-w-7xl">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl md:text-4xl font-sans font-bold mb-4 mt-16">
-            What We{' '}
-            <span className="text-junkGreen text-2xl md:text-4xl font-bold">
-              Do
-            </span>
+            What We Do
           </h2>
           <div className="h-2 w-1/2 mb-4 bg-gradient-to-r from-junkGreen to-transparent" />
           <p className="mb-6">
@@ -82,10 +79,7 @@ const IndexPage = () => {
       >
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl md:text-4xl font-sans font-bold mb-4 mt-16">
-            Discover{' '}
-            <span className="text-junkGreen text-2xl md:text-4xl font-bold">
-              More
-            </span>
+            Discover More
           </h2>
           <div className="h-2 w-1/2 mb-4 bg-gradient-to-r from-junkGreen to-transparent" />
           <p className="mb-6">
@@ -103,11 +97,7 @@ const IndexPage = () => {
       <section id="estimate" className="mt-20 mb-20 px-12 mx-auto max-w-7xl">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl md:text-4xl font-sans font-bold mb-4 mt-16">
-            Get a{' '}
-            <span className="text-junkGreen text-2xl md:text-4xl font-bold">
-              Free
-            </span>{' '}
-            Estimate Today
+            Get a Free Estimate Today
           </h2>
           <div className="h-2 w-1/2 mb-4 bg-gradient-to-r from-junkGreen to-transparent" />
           {/* <p className="mb-6">
@@ -140,6 +130,18 @@ const IndexPage = () => {
             provide you with a quote on site.
           </li> */}
           </ol>
+        </div>
+      </section>
+      <section>
+        {' '}
+        <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+          <div className="relative rounded-full px-3 pt-10 pb-10 text-md leading-6 text-gray-600  ring-gray-900/10 hover:ring-gray-900/20">
+            Black and Queer owned Business in Baltimore.{' '}
+            <a href="/about" className="font-semibold text-indigo-600">
+              <span className="absolute inset-0" aria-hidden="true" />
+              Read more <span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
         </div>
       </section>
     </Layout>

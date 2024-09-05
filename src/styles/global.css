@@ -156,46 +156,51 @@ aside {
 .animate-li > li:nth-child(2) {
   transition: all 0.5s ease 0.3s;
   transition-delay: 0.3s;
-  &:hover {
-    transition-delay: none;
-    transition: all 0.3s;
-  }
+}
+
+.animate-li > li:nth-child(2):hover {
+  transition-delay: 0s;
+  transition: all 0.3s;
 }
 
 .animate-li > li:nth-child(3) {
   transition: all 0.5s ease 0.4s;
   transition-delay: 0.4s;
-  &:hover {
-    transition-delay: none;
-    transition: all 0.3s;
-  }
+}
+
+.animate-li > li:nth-child(3):hover {
+  transition-delay: 0s;
+  transition: all 0.3s;
 }
 
 .animate-li > li:nth-child(4) {
   transition: all 0.5s ease 0.5s;
   transition-delay: 0.5s;
-  &:hover {
-    transition-delay: none;
-    transition: all 0.3s;
-  }
+}
+
+.animate-li > li:nth-child(4):hover {
+  transition-delay: 0s;
+  transition: all 0.3s;
 }
 
 .animate-li > li:nth-child(5) {
   transition: all 0.5s ease 0.6s;
   transition-delay: 0.6s;
-  &:hover {
-    transition-delay: none;
-    transition: all 0.3s;
-  }
+}
+
+.animate-li > li:nth-child(5):hover {
+  transition-delay: 0s;
+  transition: all 0.3s;
 }
 
 .animate-li > li:nth-child(6) {
   transition: all 0.5s ease 0.7s;
   transition-delay: 0.7s;
-  &:hover {
-    transition-delay: none;
-    transition: all 0.3s;
-  }
+}
+
+.animate-li > li:nth-child(6):hover {
+  transition-delay: 0s;
+  transition: all 0.3s;
 }
 
 .fade > li {
@@ -258,146 +263,6 @@ aside {
   }
   to {
     transform: rotate(0deg);
-  }
-}
-
-/* |||||||||||||||||||||| Pricing Modal |||||||||||||||||||||| */
-.prices {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 0 auto 2rem;
-  max-width: 80%;
-}
-
-.prices h2 {
-  font-size: 2rem;
-  color: #002c58;
-}
-
-.price-boxes {
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  margin: 5rem auto;
-}
-
-.price-box {
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  border: 0.1px solid rgba(102, 51, 153, 0.08);
-  margin: 0 auto 2rem;
-  width: 90%;
-  button {
-    &:hover {
-      cursor: pointer;
-    }
-  }
-}
-
-.price-box span {
-  display: inline-block;
-  padding-bottom: 1.5rem;
-}
-
-.price-box.price-box-premium {
-  background-color: #c7e3ff;
-  border: 0.1px solid rgba(0, 44, 88, 0.1);
-}
-
-.price-box.price-box-premium p {
-  color: #002c58;
-}
-
-.price-box.price-box-premium ul {
-  border-top: 1px solid #002c583d;
-}
-
-.price-box.price-box-premium ul li {
-  border-bottom: 1px solid #002c583d;
-}
-
-.price-box ul {
-  padding: 0;
-  list-style: none;
-  border-top: 1px solid #002c583d;
-}
-
-.price-box ul li {
-  padding: 10px 0;
-  margin-bottom: 1rem;
-  border-bottom: 1px solid #002c583d;
-  padding-left: 15px;
-}
-
-.price-box h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: #002c58;
-}
-
-.price-box p {
-  font-size: 4rem;
-  font-weight: bolder;
-  margin-bottom: 1rem;
-}
-
-.price-box button {
-  background-image: linear-gradient(to right, rgb(1, 77, 78), #002c58);
-  color: white;
-  padding: 15px;
-  width: 100%;
-  border: none;
-  border-radius: 10px;
-  margin-top: 10px;
-  text-transform: uppercase;
-  font-size: 1.5;
-  letter-spacing: 2px;
-}
-
-@media (min-width: 768px) {
-  .price-box {
-    width: 65%;
-  }
-}
-
-@media (min-width: 992px) {
-  .price-box {
-    width: 50%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .price-box {
-    width: 50%;
-  }
-
-  .price-boxes {
-    display: flex;
-    height: 600px;
-  }
-
-  .price-box.price-box-premium {
-    transform: scale(1.11);
-  }
-}
-
-@media (min-width: 1200px) {
-  .prices {
-    margin-bottom: 12rem;
-    width: 90%;
-  }
-}
-
-@media (min-width: 1400px) {
-  .prices {
-    width: 60%;
-  }
-  .price-box {
-    width: 40%;
   }
 }
 

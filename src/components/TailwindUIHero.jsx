@@ -20,10 +20,10 @@ const mediaNode = (
         alt="Storefront"
         className="tint w-full h-[91vh] object-cover"
         loading="eager"
-        layout="constrained"  // Optimize image size based on container
-        placeholder="blurred"  // Use a low-res blurred placeholder
-        width={1200}  // Specify the maximum width needed
-        height={800}  // Specify the maximum height needed
+        layout="constrained" // Optimize image size based on container
+        placeholder="blurred" // Use a low-res blurred placeholder
+        width={1200} // Specify the maximum width needed
+        height={800} // Specify the maximum height needed
       />
     </div>
     <div>
@@ -32,10 +32,10 @@ const mediaNode = (
         alt="Mopping"
         className="tint w-full h-[91vh] object-cover"
         loading="lazy"
-        layout="constrained"  // Optimize image size based on container
-        placeholder="blurred"  // Use a low-res blurred placeholder
-        width={1200}  // Specify the maximum width needed
-        height={800}  // Specify the maximum height needed
+        layout="constrained" // Optimize image size based on container
+        placeholder="blurred" // Use a low-res blurred placeholder
+        width={1200} // Specify the maximum width needed
+        height={800} // Specify the maximum height needed
       />
     </div>
     <div>
@@ -44,10 +44,10 @@ const mediaNode = (
         alt="Skyscraper"
         className="tint w-full h-[91vh] object-cover"
         loading="lazy"
-        layout="constrained"  // Optimize image size based on container
-        placeholder="blurred"  // Use a low-res blurred placeholder
-        width={1200}  // Specify the maximum width needed
-        height={800}  // Specify the maximum height needed
+        layout="constrained" // Optimize image size based on container
+        placeholder="blurred" // Use a low-res blurred placeholder
+        width={1200} // Specify the maximum width needed
+        height={800} // Specify the maximum height needed
       />
     </div>
   </Carousel>
@@ -58,15 +58,7 @@ export default function TailwindUIHero() {
     <div className="bg-white">
       {mediaNode}
       <div className="left-0 right-0 sm:top-[24px] top-[40px] absolute max-w-2xl py-28 m-auto lg:py-40 justify-center flex flex-col align-middle">
-        <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-          <div className="relative rounded-full px-3 py-3 text-sm leading-6 text-gray-200 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-            Black and Queer owned Business in Baltimore.{' '}
-            <a href="/about" className="font-semibold text-indigo-600">
-              <span className="absolute inset-0" aria-hidden="true" />
-              Read more <span aria-hidden="true">&rarr;</span>
-            </a>
-          </div>
-        </div>
+        <div className="hidden sm:mb-8 py-7 sm:flex sm:justify-center"></div>
         <div className="text-center">
           <h1 className="text-4xl font-bold tracking-tight text-gray-200 sm:text-5xl md:text-6xl">
             Affordable Cleaning & Junk Removal

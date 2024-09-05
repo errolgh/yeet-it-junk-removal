@@ -1,7 +1,7 @@
 import React from 'react';
 import { IoLogoFacebook, IoLogoInstagram } from 'react-icons/io5';
 import { Link } from 'gatsby';
-import { StaticImage } from "gatsby-plugin-image"
+import { StaticImage } from 'gatsby-plugin-image';
 
 // const zoomLevel = 14;
 // const mapSource = `https://maps.google.com/maps?q=55%20Manchester%20Avenue,%20May%20Pen,%20Jamaica&t=&z=${zoomLevel}&ie=UTF8&iwloc=&output=embed`;
@@ -13,8 +13,12 @@ export default function Footer() {
       <div className=" max-w-7xl flex flex-col items-center justify-between mx-auto space-y-16 md:flex-row md:space-y-0 md:items-start">
         {/*  Logo  */}
         <div className="flex flex-col items-center space-y-2 md:flex-row md:space-x-4 md:pr-8">
-          <div className="flex w-20 justify-center pt-4 relative z-50">
-            <StaticImage loading='lazy' src='../images/logo.png' alt="Nevermore Cleaning & Junk Removal logo" />
+          <div className="flex w-20 justify-center pt-4 relative z-40">
+            <StaticImage
+              loading="lazy"
+              src="../images/logo.png"
+              alt="Nevermore Cleaning & Junk Removal logo"
+            />
           </div>
           <div className="flex flex-col text-center justify-center z-10 text-black font-bold">
             <span className="font-bold text-xl tracking-widest text-black">

@@ -16,7 +16,7 @@ module.exports = {
       colors: {
         brandPrimary: '#ca8a04',
         efferBlue: '#00315A',
-        junkGreen: "#4CAF50",
+        junkGreen: "#327835",
         darkEfferBlue: '#002c58',
         alabaster: '#F9FAFB',
       },

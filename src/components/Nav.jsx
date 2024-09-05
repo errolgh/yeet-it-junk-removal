@@ -11,13 +11,13 @@ export default function Nav() {
         <Link to="/">
           <div className="flex">
             {/*  Logo  */}
-            <div className="flex w-20 p-1 relative z-50">
+            <div className="flex w-20 p-1 relative z-40">
               <StaticImage
                 src="../images/logo.png"
                 alt="Nevermore Cleaning & Junk Removal logo"
                 aria-hidden="true"
                 role="presentation"
-                loading="lazy" // Ensure it's loaded quickly
+                loading="eager" // Ensure it's loaded quickly
                 placeholder="blurred" // Placeholder to enhance perceived load time
                 formats={['auto', 'webp', 'avif']}
                 width={150} // Specify the maximum width needed

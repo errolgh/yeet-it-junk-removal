@@ -17,6 +17,7 @@ const ContactForm = () => {
   const form = useRef();
   const [buttonText, setButtonText] = useState('Send');
   const [disableSubmit, setDisableSubmit] = useState(false);
+  const [isChecked, setIsChecked] = useState(false);
 
   const sendEmail = () => {
     setButtonText('Sending...');
@@ -71,8 +72,16 @@ const ContactForm = () => {
       message: yup
         .string()
         .max(700, 'Your message must be 700 characters or less.'),
+      termsAccepted: yup
+        .boolean()
+        .oneOf([true], 'You must accept the Terms and Conditions.'),
     }),
   });
+
+  const handleCheckboxChange = (event) => {
+    setIsChecked(event.target.checked);
+    formik.setFieldValue('termsAccepted', event.target.checked);
+  };
 
   return (
     <Layout>
@@ -237,11 +246,37 @@ const ContactForm = () => {
                     </span>
                   </div>
                 </div>
+                <div className="flex items-center space-x-2 mt-4 pb-5">
+                  <input
+                    type="checkbox"
+                    id="termsAccepted"
+                    name="termsAccepted"
+                    checked={formik.values.termsAccepted}
+                    onChange={handleCheckboxChange}
+                    onBlur={formik.handleBlur}
+                    className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded cursor-pointer"
+                  />
+                  <label htmlFor="termsAccepted" className="text-gray-600">
+                    I agree to the{' '}
+                    <a
+                      href="/terms-of-service"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="underline text-indigo-600 hover:no-underline"
+                    >
+                      Terms of Service
+                    </a>
+                  </label>
+                </div>
                 {/* Submission Elements */}
                 <button
-                  disabled={disableSubmit}
+                  disabled={!isChecked || disableSubmit}
                   type="submit"
-                  className="mt-4 py-4 px-8 text-xl font-bold rounded-md lg:py-4 focus:outline-none shadow-xl bg-indigo-600 text-gray-100 hover:bg-indigo-700 hover:text-slate-800 inline-block w-full md:w-auto"
+                  className={`mt-4 py-4 px-8 text-xl font-bold rounded-md lg:py-4 focus:outline-none shadow-xl ${
+                    !isChecked || disableSubmit
+                      ? 'bg-gray-400 text-gray-200 cursor-not-allowed'
+                      : 'bg-indigo-600 text-gray-100 hover:bg-indigo-700 hover:text-slate-800'
+                  } inline-block w-full md:w-auto`}
                 >
                   {buttonText}
                 </button>
