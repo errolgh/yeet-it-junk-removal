@@ -4,13 +4,16 @@ import Footer from './Footer';
 import GratefulPlug from './GratefulPlug';
 import { motion as m } from 'framer-motion';
 import CCPPBanner from './CCPPBanner';
-
+import { useLocation } from '@reach/router';
 
 export default function Layout({ children }) {
+  const location = useLocation();
+  const isNotFoundPage =
+    location.pathname === '/404' || location.pathname === '/404.html';
   return (
     <div id="overflow-fix">
       <Nav />
-      <CCPPBanner />
+      {!isNotFoundPage && <CCPPBanner />}
       <m.main
         initial={{
           opacity: 0,
