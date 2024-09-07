@@ -12,7 +12,7 @@ module.exports = {
     siteUrl: `https://www.yourdomain.tld`,
   },
   flags: {
-    DEV_SSR: true,
+    DEV_SSR: false,
   },
 
   plugins: [
