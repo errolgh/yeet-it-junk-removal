@@ -7,7 +7,7 @@ export default function Nav() {
 
   return (
     <header className="relative flex justify-center">
-      <nav className="bg-brandPrimary text-slate-400 md:text-black w-full flex items-center justify-between font-bold md:px-5 lg:justify-center lg:gap-x-80 xl:gap-x-96">
+      <nav className="shadow-md bg-brandPrimary text-slate-400 md:text-black w-full flex items-center justify-between font-bold md:px-5 lg:justify-center lg:gap-x-80 xl:gap-x-96">
         <Link to="/">
           <div className="flex">
             {/*  Logo  */}

@@ -15,8 +15,11 @@ module.exports = {
     extend: {
       colors: {
         brandPrimary: '#ca8a04',
+        brandSecondary: '#9f2042',
+        brandTertiary: '#429ea6',
+
         efferBlue: '#00315A',
-        junkGreen: "#327835",
+        junkGreen: '#327835',
         darkEfferBlue: '#002c58',
         alabaster: '#F9FAFB',
       },
@@ -24,10 +27,10 @@ module.exports = {
         '8xl': '1440px',
       },
       fontFamily: {
-        ubuntu: ["Ubuntu, sans-serif"],
-        poppins: ["Poppins, sans-serif"],
+        ubuntu: ['Ubuntu, sans-serif'],
+        poppins: ['Poppins, sans-serif'],
       },
     },
   },
   plugins: [],
-}
+};
