@@ -201,10 +201,9 @@ const LandingPage = () => {
           <div className="relative flex flex-col justify-between space-y-8 md:p-12 lg:p-6">
             <div>
               <h1 id="contact">Ready to Get Started?</h1>
-              <p className="pt-4">
-                Ready to experience Nevermore? Schedule your hassle-free
-                services today. Let us partner with you to create cleaner, more
-                inviting environments for your business or home.
+              <p className="pt-4"><i><strong>
+                Contact us today to schedule your free estimate and walkthrough,
+                and let’s discuss how we can make your properties stand out.</strong></i>
               </p>
               <p className="pt-4">
                 Filling out this form will notify someone from our team. Let us
