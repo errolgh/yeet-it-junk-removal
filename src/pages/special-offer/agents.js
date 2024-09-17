@@ -39,7 +39,7 @@ const LandingPage = () => {
     setButtonText('Sending...');
     emailjs
       .sendForm(
-        process.env.OFFER_SERVICE_ID,
+        process.env.SERVICE_ID,
         process.env.OFFER_TEMPLATE_ID,
         form.current,
         process.env.PUBLIC_KEY
