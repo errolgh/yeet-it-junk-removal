@@ -127,9 +127,9 @@ const LandingPage = () => {
                 Comprehensive Cleaning Services
               </h3>
               <p className="text-gray-700">
-                From move-in/move-out cleanings to exterior care and junk
-                removal, we offer customizable cleaning solutions tailored to
-                your property’s needs.
+                Explore our diverse cleaning solutions, from move-in/move-out
+                and exterior care to junk removal and thorough commercial
+                cleaning.
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
@@ -201,9 +201,13 @@ const LandingPage = () => {
           <div className="relative flex flex-col justify-between space-y-8 md:p-12 lg:p-6">
             <div>
               <h1 id="contact">Ready to Get Started?</h1>
-              <p className="pt-4"><i><strong>
-                Contact us today to schedule your free estimate and walkthrough,
-                and let’s discuss how we can make your properties stand out.</strong></i>
+              <p className="pt-4">
+                <i>
+                  <strong>
+                    Contact us today for your free estimate and discover how our
+                    all-in-one solution can make your property stand out.
+                  </strong>
+                </i>
               </p>
               <p className="pt-4">
                 Filling out this form will notify someone from our team. Let us
