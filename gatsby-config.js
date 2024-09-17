@@ -59,7 +59,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-env-variables',
       options: {
-        allowList: ['SERVICE_ID', 'TEMPLATE_ID', 'PUBLIC_KEY'],
+        allowList: ['SERVICE_ID', 'TEMPLATE_ID', 'PUBLIC_KEY, OFFER_TEMPLATE_ID'],
       },
     },
     {
