@@ -109,7 +109,7 @@ const LandingPage = () => {
             Removal
           </h1>
           <p className="mt-4 text-lg max-w-3xl mx-auto font-semibold">
-            Maximize Your Listings' Appeal – 15% Off Cleaning & Junk Removal!
+            Maximize Your Listings' Appeal – 15% Off for Realtors!
           </p>
         </header>
 
