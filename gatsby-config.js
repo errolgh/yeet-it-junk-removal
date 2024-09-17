@@ -9,7 +9,7 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: `trucking-company`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://www.letstalknevermore.com`,
   },
   flags: {
     DEV_SSR: false,
@@ -59,7 +59,12 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-env-variables',
       options: {
-        allowList: ['SERVICE_ID', 'TEMPLATE_ID', 'PUBLIC_KEY, OFFER_TEMPLATE_ID'],
+        allowList: [
+          'PUBLIC_KEY',
+          'SERVICE_ID',
+          'TEMPLATE_ID',
+          'OFFER_TEMPLATE_ID',
+        ],
       },
     },
     {
