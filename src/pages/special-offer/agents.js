@@ -401,7 +401,7 @@ export default LandingPage;
 export const Head = () => (
   <>
     <html lang="en" />
-    <title>Landing Page | Nevermore Cleaning & Junk Removal</title>
+    <title>Showcase-Ready Properties | Nevermore Cleaning & Junk Removal</title>
     <meta charSet="utf-8" />
     <meta
       name="description"
